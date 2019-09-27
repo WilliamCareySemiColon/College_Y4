@@ -1,0 +1,3 @@
+I would model a one to many relatiionship between two database - 
+One called "Toy" that has age, name and id and another called "ToyAttribute", 
+where I would use id and attribute as fields in this table. The id in both tables are primary keys

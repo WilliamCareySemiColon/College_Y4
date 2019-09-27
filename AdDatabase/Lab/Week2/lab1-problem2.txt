@@ -1,0 +1,1 @@
+No because it is impossible to ensure that for all of the one entity that have many, the many has at least one, without creating an external / internal trigger

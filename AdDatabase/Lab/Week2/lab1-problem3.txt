@@ -1,0 +1,62 @@
+per cinema, there is location, contact num, name and no of screens
+
+each screen has a number of shows at different times
+
+movies (past and present) are stored with title, duration and rating
+
+each screen has a number of seatings recorded
+
+booking can be made with a username, password, DOB
+
+users can book tickets for shows, which varies in price depending on adult / child
+
+seat numbers are assigned and can be grouped together
+
+total price of booking is recorded
+
+each booking has an unique id 
+
+design the relational database
+
+cinema screens shows movies booking users tickets 
+
+
+user table
+--username (pk)
+--password
+--dob
+
+ticket table
+--ticket id
+--seat number
+--ticket type
+--booking id (fk)
+--show id (fk)
+
+booking table
+--booking id (pk)
+--username (fk)
+--total price
+
+cinema table
+--cinema_name
+--location
+--contact number
+--no of screens
+
+screen table
+--cinema_name (fk)
+--screen number (pk)
+--number of seats
+
+shows table
+--show id (pk)
+--screen no (fk)
+--start_time
+--film_id (fk)
+
+movie
+--film_id (pk)
+--name
+--duration
+--rating
