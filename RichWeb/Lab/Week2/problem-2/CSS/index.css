@@ -1,0 +1,88 @@
+#parent-grid-container
+{
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: auto auto auto auto;
+    padding: 1em;
+}
+
+#parent-grid-container > div, .child-grid-container > div
+{
+    border: 1px solid black;
+}
+.child-grid-container
+{
+    display: grid;
+    background-color: blue;
+    grid-template-columns: auto auto auto auto;
+    padding: 1em;
+}
+
+.child-grid-container > div
+{
+    background-color: purple
+}
+body
+{
+    color: white;
+}
+/*Because the 360px part was not working on the engine, as part of testing, the
+smaller bit was increased to 500 and the medium was increased to 800px
+
+Can be quickly adjusted to 720 px*/
+@media only screen and (max-width:800px )
+{
+    #parent-grid-container
+    {
+        width: 50%;
+    }
+    .span-item-1
+    {
+        grid-area: 1 / 1 / 1 / 3;
+        
+    }
+    .span-item-2
+    {
+        grid-area: 1 / 3 / 1 / 5;
+    }
+
+    .span-item-3
+    {
+        grid-area: 2 / 1 / 2 / 3;
+    }
+
+    .span-item-4
+    {
+        grid-area: 2 / 3 / 2 / 5;
+    }
+}
+/*For some reason, the windows engine will not go down to 360px and lower
+Therefore, for testing purposes, size was increased to 500px
+
+Can be quickly be changed to 360px*/
+@media only screen and (max-width:500px )
+{
+    #parent-grid-container
+    {
+        width: 25%;
+    }
+    .span-item-1
+    {
+        grid-area: 1 / 1 / 1 / 5;
+        
+    }
+    .span-item-2
+    {
+        grid-area: 2 / 1 / 2 / 5;
+    }
+
+    .span-item-3
+    {
+        grid-area: 3 / 1 / 3 / 5;
+    }
+
+    .span-item-4
+    {
+            grid-area: 4 / 1 / 4 / 5;
+    }
+}
