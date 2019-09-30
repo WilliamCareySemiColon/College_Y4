@@ -1,0 +1,25 @@
+html,body{
+    background-color: blue;
+    color: white;
+}
+
+#NotesArea, #NotesArea td, #NotesArea tr
+{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+#ModelBox
+{
+    width: 75%;
+    margin-left: 12.5%
+}
+
+#NoteToSubmit
+{
+    width: 30em;
+    height: 30em;
+}
