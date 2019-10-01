@@ -1,3 +1,4 @@
+/*Make the grid 4 by 1 with padding*/
 #parent-grid-container
 {
     display: grid;
@@ -5,11 +6,12 @@
     grid-template-columns: auto auto auto auto;
     padding: 1em;
 }
-
+/*Set the parent to have border*/
 #parent-grid-container > div, .child-grid-container > div
 {
     border: 1px solid black;
 }
+/*Child grid to differiate from parent*/
 .child-grid-container
 {
     display: grid;
@@ -29,7 +31,10 @@ body
 /*Because the 360px part was not working on the engine, as part of testing, the
 smaller bit was increased to 500 and the medium was increased to 800px
 
-Can be quickly adjusted to 720 px*/
+Can be quickly adjusted to 720 px
+
+This makes the inner and outer contains 2 * 2
+*/
 @media only screen and (max-width:800px )
 {
     #parent-grid-container
@@ -59,7 +64,10 @@ Can be quickly adjusted to 720 px*/
 /*For some reason, the windows engine will not go down to 360px and lower
 Therefore, for testing purposes, size was increased to 500px
 
-Can be quickly be changed to 360px*/
+Can be quickly be changed to 360px
+
+This makes it a 1 by 4
+*/
 @media only screen and (max-width:500px )
 {
     #parent-grid-container
