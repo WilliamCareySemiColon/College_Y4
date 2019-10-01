@@ -1,8 +1,15 @@
+/*Main CSS for the page*/
 html,body{
     background-color: blue;
     color: white;
 }
 
+div, button
+{
+    margin-right: 1em;
+    margin-top: 1em;
+}
+/*CSS to deal with the implementation of the notes*/
 #NotesArea, #NotesArea td, #NotesArea tr
 {
     border: 1px solid black;
@@ -12,14 +19,10 @@ html,body{
     color: black;
 }
 
-#ModelBox
+.NotesInsideDiv
 {
-    width: 75%;
-    margin-left: 12.5%
-}
-
-#NoteToSubmit
-{
-    width: 30em;
-    height: 30em;
+    background-color: white;
+    color: black;
+    width: fit-content;
+    height: fit-content;
 }

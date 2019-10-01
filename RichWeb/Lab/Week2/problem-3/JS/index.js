@@ -1,71 +1,11 @@
+//variable to keep track of the ids inside the page
 var tableRowId = 1;
-
-function AddANote()
-{
-    let note = prompt("What note would you like to add", "Sample Note");
-
-    if(note == null)
-    {
-        return;
-    }
-
-   //getting the notes area 
-    let notesArea = document.getElementById('NotesArea');
-
-    //creating the table row and columns containing the notes and the button
-    let tableRow = document.createElement("tr");
-
-    //the first column
-    let tableColumnNote = document.createElement("td");
-    let inputtedNotes = document.createTextNode(note);
-    tableColumnNote.appendChild(inputtedNotes);
-
-    //appending the first column to the row
-    tableRow.appendChild(tableColumnNote);
-
-    //the second column
-    let tableColumnEditButtons = document.createElement("td");
-    //creating the buttons and their listener
-
-    //the edit button fields
-    let EditButton = document.createElement("button");
-    let EditButtonText = document.createTextNode("Edit");
-    EditButton.appendChild(EditButtonText);
-    EditButton.id = "EditButton" + tableRowId;
-    EditButton.addEventListener("click", function EditNote()
-    {
-        MainEditButtonFunction(EditButton.id);
-    });
-
-    tableColumnEditButtons.appendChild(EditButton);
-    tableRow.appendChild(tableColumnEditButtons);
-
-    //the delete button fields and function
-    let DeleteButtonColumn = document.createElement("td");
-    let DeleteButton = document.createElement("button");
-    let DeleteButtonText = document.createTextNode("Delete");
-    DeleteButton.appendChild(DeleteButtonText);
-    DeleteButton.id = "DeleteButton"+tableRowId
-    DeleteButton.addEventListener("click", function DeleteNote()
-    {
-        MainDeleteFunction(DeleteButton.id);
-    });
-
-    DeleteButtonColumn.appendChild(DeleteButton);
-    tableRow.appendChild(DeleteButtonColumn);
-    //attaching the buttons to the table
-
-    notesArea.appendChild(tableRow);
-
-    tableRow.id = tableRowId;
-
-    tableRowId++;
-}
 
 function AddANoteToDiv()
 {
-    let note = prompt("What note would you like to add", "Sample Note");
-
+    //adding the new note to the collection
+    let note = prompt("What is you note", "Sample")
+    //ensure the note is not empty
     if(note == null)
     {
         return;
@@ -74,19 +14,18 @@ function AddANoteToDiv()
    //getting the notes area 
     let notesArea = document.getElementById('NotesStorage');
 
-    //creating the div area containing the notes and the button
+    //creating the div area to store the notes and the associated buttons
     let notesDiv = document.createElement("div");
 
-    //the paragraph containing the notes
+    //the paragraph 
     let noteParagraph = document.createElement("p");
     let inputtedNotes = document.createTextNode(note);
     noteParagraph.appendChild(inputtedNotes);
 
-    //appending the paragraph and spaces
+    //appending the paragraph and a newline 
     notesDiv.appendChild(noteParagraph);
-    notesDiv.appendChild(document.createElement("br"));
 
-    //appending the buttons to the div 
+    //appending the edit and delete buttons to the div 
 
     //the edit button fields
     let EditButton = document.createElement("button");
@@ -97,7 +36,6 @@ function AddANoteToDiv()
     {
         MainEditButtonFunction(EditButton.id);
     });
-
     notesDiv.appendChild(EditButton);
 
     //the delete button fields and function
@@ -109,66 +47,66 @@ function AddANoteToDiv()
     {
         MainDeleteFunction(DeleteButton.id);
     });
-
     notesDiv.appendChild(DeleteButton);
 
+    //assigning the classname to the new div
     notesDiv.className = "NotesInsideDiv";
-
+    //giving an unique id
     notesDiv.id = "NotesInsideDiv" + tableRowId;
 
-    //attaching the buttons to the table
+    //attaching the new div and a new line to the parent div
     notesArea.appendChild(notesDiv);
-    notesArea.appendChild(document.createElement("br"));
 
-    // tableRow.id = tableRowId;
-
+    // increment the id
     tableRowId++;
 }
 
 //the function to edit the notes
 function MainEditButtonFunction(ButtonID)
 {
-    let notesArea = document.getElementById('NotesArea');
-
-    let tableRowCollection = notesArea.getElementsByTagName("tr");
-
-    for(let i = 0; i < tableRowCollection.length; i++)
+    //getting the parent div and the children collection
+    let notesArea = document.getElementById('NotesStorage');
+    let notesCollection = notesArea.getElementsByClassName("NotesInsideDiv");
+    //iterate through the collection until we find the note to edit
+    for(let i = 0; i < notesCollection.length; i++)
     {
-        let tableRowItem = tableRowCollection[i].getElementsByTagName("td");
+        let paragraphArea =  notesCollection[i].getElementsByTagName("p");
+        let paragraphText = paragraphArea[0];
 
-        let button = tableRowItem[1];
-
-        if(button.innerHTML.match(ButtonID))
+        let buttons = notesCollection[i].getElementsByTagName("button");
+        let EditButton = buttons[0];
+        //we found the note, so prompt to update and update
+        if(EditButton.id == ButtonID)
         {
-            var newText = prompt("What is your new note", tableRowItem[0].innerText);
-            if(newText == null)
-            {
-                return;
-            }
-            tableRowItem[0].innerText = newText;
-            //console.log(button);
-            break;
+             var newText = prompt("What is your updated note", paragraphText.innerText);
+             if(newText == null)
+             {
+                 return;
+             }
+             paragraphText.innerText = newText;
+            // //console.log(button);
+             break;
+            
         }
-        
     }
+    
 }
 
 //the functions to remove the notes
 function MainDeleteFunction(ButtonID)
 {
-   let notesArea = document.getElementById('NotesStorage');
-
+    //getting the parent div and the colloction of children
+    let notesArea = document.getElementById('NotesStorage');
     let notesCollection = notesArea.getElementsByClassName("NotesInsideDiv");
-
+    //iterate through the collection until we find the notes to delete
     for(let i = 0; i < notesCollection.length; i++)
     {
         let buttons = notesCollection[i].getElementsByTagName("button");
-
         let delButton = buttons[1];
-
+        //we found the note, so delete it
         if(delButton.id == ButtonID)
         {
-            console.log("item with " + delButton.id + " will be deleted");
+            //console.log("item with " + delButton.id + " will be deleted");
             notesArea.removeChild(notesCollection[i]);
             break;
         }
