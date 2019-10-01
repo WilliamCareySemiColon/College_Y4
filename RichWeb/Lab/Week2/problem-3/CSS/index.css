@@ -10,15 +10,6 @@ div, button
     margin-top: 1em;
 }
 /*CSS to deal with the implementation of the notes*/
-#NotesArea, #NotesArea td, #NotesArea tr
-{
-    border: 1px solid black;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: black;
-}
-
 .NotesInsideDiv
 {
     background-color: white;
@@ -27,13 +18,13 @@ div, button
     height: fit-content;
 }
 /*Buttons section*/
-#divColour, #divColour button
+.AquaButton, .PinkButton, .WhiteButton
 {
     width: 20%;
     height: 1.5em;
 }
-#AquaButton { background-color: aqua; }
+.AquaButton { background-color: aqua; }
 
-#PinkButton { background-color: pink; }
+.PinkButton { background-color: pink; }
 
-#WhiteButton { background-color: white; }
+.WhiteButton { background-color: white; }

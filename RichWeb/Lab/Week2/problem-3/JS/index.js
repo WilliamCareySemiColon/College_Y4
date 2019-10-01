@@ -54,6 +54,32 @@ function AddANoteToDiv()
     //giving an unique id
     notesDiv.id = "NotesInsideDiv" + tableRowId;
 
+    //creating the colour section
+    let colourHeader = document.createElement("h3");
+    colourHeader.innerText = "Change the colour of the div";
+    notesDiv.appendChild(colourHeader);
+    //pink button
+    let pinkButton = document.createElement("button");
+    pinkButton.className = "PinkButton";
+    pinkButton.addEventListener("click",function SetDivPink() {
+        MainSetDivPink(notesDiv.id);
+    });
+    notesDiv.appendChild(pinkButton);
+    //aqua button
+    let aquaButton = document.createElement("button");
+    aquaButton.className = "AquaButton";
+    aquaButton.addEventListener("click",function SetDivAqua() {
+        MainSetDivAqua(notesDiv.id);
+    });
+    notesDiv.appendChild(aquaButton);
+    //aqua button
+    let whiteButton = document.createElement("button");
+    whiteButton.className = "WhiteButton";
+    whiteButton.addEventListener("click",function SetDivAqua() {
+        MainSetDivWhite(notesDiv.id);
+    });
+    notesDiv.appendChild(whiteButton);
+
     //attaching the new div and a new line to the parent div
     notesArea.appendChild(notesDiv);
 
@@ -114,35 +140,17 @@ function MainDeleteFunction(ButtonID)
 }
 
 //functions to change the colour of the notes
-function ChangeToAqua()
+function MainSetDivAqua(DivID)
 {
-    let notesArea = document.getElementById('NotesStorage');
-    let notesCollection = notesArea.getElementsByClassName("NotesInsideDiv");
-
-    for(let i = 0; i < notesCollection.length; i++)
-    {
-        notesCollection[i].style.backgroundColor = "aqua";
-    }
+    document.getElementById(DivID).style.backgroundColor = "aqua";
 }
 
-function ChangeToPink()
+function MainSetDivPink(DivID)
 {
-    let notesArea = document.getElementById('NotesStorage');
-    let notesCollection = notesArea.getElementsByClassName("NotesInsideDiv");
-
-    for(let i = 0; i < notesCollection.length; i++)
-    {
-        notesCollection[i].style.backgroundColor = "pink";
-    }
+    document.getElementById(DivID).style.backgroundColor = "pink";
 }
 
-function ChangeToWhite()
+function MainSetDivWhite(DivID)
 {
-    let notesArea = document.getElementById('NotesStorage');
-    let notesCollection = notesArea.getElementsByClassName("NotesInsideDiv");
-
-    for(let i = 0; i < notesCollection.length; i++)
-    {
-        notesCollection[i].style.backgroundColor = "white";
-    }
+    document.getElementById(DivID).style.backgroundColor = "white";
 }
