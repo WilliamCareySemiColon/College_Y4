@@ -11,7 +11,7 @@ function AddANoteToDiv()
         return;
     }
 
-   //getting the notes area 
+    //getting the notes area 
     let notesArea = document.getElementById('NotesStorage');
 
     //creating the div area to store the notes and the associated buttons
@@ -110,5 +110,39 @@ function MainDeleteFunction(ButtonID)
             notesArea.removeChild(notesCollection[i]);
             break;
         }
+    }
+}
+
+//functions to change the colour of the notes
+function ChangeToAqua()
+{
+    let notesArea = document.getElementById('NotesStorage');
+    let notesCollection = notesArea.getElementsByClassName("NotesInsideDiv");
+
+    for(let i = 0; i < notesCollection.length; i++)
+    {
+        notesCollection[i].style.backgroundColor = "aqua";
+    }
+}
+
+function ChangeToPink()
+{
+    let notesArea = document.getElementById('NotesStorage');
+    let notesCollection = notesArea.getElementsByClassName("NotesInsideDiv");
+
+    for(let i = 0; i < notesCollection.length; i++)
+    {
+        notesCollection[i].style.backgroundColor = "pink";
+    }
+}
+
+function ChangeToWhite()
+{
+    let notesArea = document.getElementById('NotesStorage');
+    let notesCollection = notesArea.getElementsByClassName("NotesInsideDiv");
+
+    for(let i = 0; i < notesCollection.length; i++)
+    {
+        notesCollection[i].style.backgroundColor = "white";
     }
 }

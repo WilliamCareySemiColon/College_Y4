@@ -26,3 +26,14 @@ div, button
     width: fit-content;
     height: fit-content;
 }
+/*Buttons section*/
+#divColour, #divColour button
+{
+    width: 20%;
+    height: 1.5em;
+}
+#AquaButton { background-color: aqua; }
+
+#PinkButton { background-color: pink; }
+
+#WhiteButton { background-color: white; }
