@@ -52,7 +52,12 @@ insert into Apps_NOT_Normalized values(3,6,'Susan','River Road','Kansas','Kan45'
 insert into Apps_NOT_Normalized values(3,6,'Susan','River Road','Kansas','Kan45',2011,'Prof. Cahill','UCC','Messy',4,'DBS',56);
 insert into Apps_NOT_Normalized values(3,6,'Susan','River Road','Kansas','Kan45',2011,'Prof. Cahill','UCC','Messy',2,'Loreto College',45);
 
+COMMIT;
+
 select * from Apps_NOT_Normalized;
 
+SELECT * FROM apps_not_normalized
+WHERE studentid = 1;
 
-
+SELECT * FROM apps_not_normalized
+WHERE studentid = 2;

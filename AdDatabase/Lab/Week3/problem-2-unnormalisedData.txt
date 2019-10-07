@@ -1,0 +1,14 @@
+Apps_NOT_Normalized
+    -App_No integer,
+    -StudentID integer,
+    -StudentName varchar(50),
+    -Street varchar(100),
+    -State varchar(30),
+    -ZipCode varchar(7),
+    -App_Year integer,
+    -ReferenceName varchar(100),
+    -RefInstitution  varchar(100),
+    -ReferenceStatement varchar(500),
+    -PriorSchoolId integer,
+    -PriorSchoolAddr varchar(100),
+    -GPA number(2)

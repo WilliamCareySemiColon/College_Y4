@@ -1,0 +1,20 @@
+Apps_NOT_Normalized
+    -App_No integer - this is a primary key (yearly based),
+        -App_Year integer
+
+    -StudentID integer - This is a primary key,
+        -StudentName varchar(50)
+
+    -ZipCode varchar(7) - This is a primary key,
+        -State varchar(30),
+            -Street varchar(100),
+
+    -ReferenceName varchar(100) + RefInstitution  varchar(100) - this is a primary key,
+        -ReferenceName varchar(100), 
+            -ReferenceStatement varchar(500),
+        -RefInstitution  varchar(100)
+
+    -PriorSchoolId integer - This is a primary key,
+        -PriorSchoolAddr varchar(100),
+        
+    -GPA number(2)
