@@ -7,16 +7,35 @@
     </head>
     <body>
         <section>
+            <!--The form to take in the phone dir details-->
             <h2>Phone Diectory</h2>
             <div id="ContactDivForm">
-                    Name:<input type = "text" id = "NameInput" class = "FormInput"/>
-                    Mobile <input type = "number" id = "MobileInput" class = "FormInput"/>
-                    E-Mail <input type="email" id = "EmailInput" class = "FormInput"/>
+                    Name:<input type = "text" id = "NameInput" class = "FormInput"/> 
+                    Mobile <input type = "number" id = "MobileInput" class = "FormInput"/> 
+                    E-Mail <input type="email" id = "EmailInput" class = "FormInput"/> 
                     <button id = "AddContact" class = "StandardButtons" onclick = "AddToContactList()">Add Contact</button>
             </div>
-
+            <div id="FindSpecificContact">
+                Fiter By Mobile Phone Number:<input type = "text" id = "PhoneInput" class = "FormInput" oninput="TestInputFun()"/> 
+                <p id = "TestParagraph"></p>
+            </div>
+            <!--The table list to display the collection of the table divs-->
             <div id="PhoneDirList">
-                <table id = "PhoneDir"></table>
+                <table id = "PhoneDir">
+                    <tr style = "background-color: black">
+                        <th onclick="MainSortbyHeader()">Name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </table>
+            </div>
+            <!--The error message div-->
+            <div id="Error">
+                <h2>Error on inputting fields into the database</h2>
+                <p>Name must contain letters only, be less then 21 characters and have input into the field</p>
+                <p>Mobile number should only be digits and 10 characters in length</p>
+                <p>Email should have input in the field, be less then 40 characters and in the format '***@***.com'</p>
+                <button onclick="CloseErrorMessage()">Close</button>
             </div>
         </section>
     </body>
