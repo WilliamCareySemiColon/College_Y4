@@ -1,0 +1,22 @@
+body
+{
+    background-color: black;
+    color: white;
+}
+
+.FormInput
+{
+    margin: 1em;
+}
+
+#ContactDivForm
+{
+    border: 1px solid white;
+}
+
+#PhoneDir tr, #PhoneDir td
+{
+    border: 1px solid white;
+    padding: 0.5em;
+    font-size: 1em;
+}
