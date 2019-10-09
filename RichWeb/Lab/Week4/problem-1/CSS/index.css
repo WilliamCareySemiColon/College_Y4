@@ -3,23 +3,23 @@ body
     background-color: blue;
     color: white;
 }
-
+/*The style for the forms input of the page*/
 .FormInput
 {
     margin: 1em;
 }
-
+/*The style for the form to take in the input for contact details*/
 #ContactDivForm
 {
     border: 1px solid white;
 }
-
+/*Generic elements for the divs*/
 div
 {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-
+/*The style to display all the inputted valid contact*/
 #PhoneDir tr, #PhoneDir td, #PhoneDir th
 {
     border: 1px solid white;
@@ -29,7 +29,8 @@ div
     padding-bottom: 1.25em;
     font-size: 1em;
 }
-
+/*The error div to overlay over the main page 
+when loaded if an invalid contact is inputted*/
 #Error
 {
     position: fixed;

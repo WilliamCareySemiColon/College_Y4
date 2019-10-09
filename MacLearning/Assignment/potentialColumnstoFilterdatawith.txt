@@ -1,0 +1,15 @@
+age
+workclass
+education
+native-country
+martial-status
+occupation
+relationship
+race
+capital-gain
+capital-loss
+hours per week
+native-country
+
+sex
+target
