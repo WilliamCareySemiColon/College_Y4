@@ -29,6 +29,11 @@ div
     padding-bottom: 1.25em;
     font-size: 1em;
 }
+
+#PhoneDir th
+{
+    background-color: black;
+}
 /*The error div to overlay over the main page 
 when loaded if an invalid contact is inputted*/
 #Error
@@ -44,4 +49,11 @@ when loaded if an invalid contact is inputted*/
     font-size: 1em;
     color: red;
     background-color: black;
+}
+
+#noResult
+{
+    visibility: hidden;
+    border: 1px solid white;
+    background-color: purple;    
 }

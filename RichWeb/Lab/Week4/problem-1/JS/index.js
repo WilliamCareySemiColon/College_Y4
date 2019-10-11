@@ -1,15 +1,9 @@
 var flag = false;
 
-function HelloWorld()
+function ClearPhoneSearchInput()
 {
-    alert("Test Works");
-}
-
-function TestInputFun()
-{
-    let x = document.getElementById("PhoneInput").value;
-
-    document.getElementById("TestParagraph").innerText = x;
+    document.getElementById("PhoneInput").value = "";
+    ShowNoResultDiv(false);
 }
 //dictionary to store all the details
 var MobileListDict = {};
@@ -83,7 +77,6 @@ function ReloadDataTable()
     Table.innerHTML = "";
     //create the row
     let firstTableRow = document.createElement("tr");
-    firstTableRow.style.backgroundColor = "black";
     //create the headers, withthe first one having a event handler
     let NameTableHeader = document.createElement("th");
     NameTableHeader.appendChild(document.createTextNode("Name"));
@@ -167,4 +160,48 @@ function MainSortbyHeader()
     NameListDict = TempDict;
 
     ReloadDataTable();
+ }
+
+ function FilterOutNumbers()
+ {
+    let flag = true;
+    //setting up the connection
+    let PhoneInput = document.getElementById("PhoneInput");
+    let keyword = PhoneInput.value.toLowerCase();
+
+    //connect with the data table
+    let Table = document.getElementById("PhoneDir");
+    let tableRows = Table.getElementsByTagName("tr");
+    //checking inside the data table which matches our criteria
+    //if it does, let it be visible. Otherwise hide it
+    for(let i = 1; i < tableRows.length; i++)
+    {
+        let name = tableRows[i].getElementsByTagName("td")[0];
+        let nameValue = name.innerText.toLowerCase();
+
+        if(nameValue.indexOf(keyword) > -1)
+        {
+            tableRows[i].style.visibility = "visible";
+            flag = false;
+        }
+         else
+        {
+            tableRows[i].style.visibility = "hidden";
+        }
+    }
+
+    ShowNoResultDiv(flag);
+
+ }
+
+ function ShowNoResultDiv(status)
+ {
+    if(status)
+    {
+        document.getElementById("noResult").style.visibility = "visible";
+    }
+    else
+    {
+        document.getElementById("noResult").style.visibility = "hidden";
+    }
  }
