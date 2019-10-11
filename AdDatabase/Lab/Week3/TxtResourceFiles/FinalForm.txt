@@ -1,0 +1,34 @@
+ZipCode varchar(7), --unique
+  	Street varchar(100),
+  	State varchar(30)
+
+StudentID integer, ---------------------------- unique
+  	StudentName varchar(50),
+	Zipcode
+
+PriorSchoolId integer, -----------------------unique
+  	PriorSchoolAddr varchar(100),
+
+StudentPriorSchool
+	StudentID integer
+	PriorSchoolId integer
+  	GPA number(2)
+
+ReferenceName varchar(100),
+RefInstitution  varchar(100),
+  ReferenceStatement varchar(500),
+
+StudentReference
+	StudentID integer
+	ReferenceName varchar(100),
+	RefInstitution  varchar(100),
+  	ReferenceStatement varchar(500),
+
+App
+	AppNumber
+	App Year
+
+StudentApp
+	studentID
+	App Year
+	App Number

@@ -72,6 +72,8 @@ DROP TABLE PRIORSCHOOL;
 DROP TABLE REFDETAILS;
 
 --The reference details
+SELECT * FROM apps_not_normalized
+WHERE studentid = 2;
 CREATE TABLE REFDETAILS(
     --the primary keys
     ReferenceName VARCHAR2(50) NOT NULL,

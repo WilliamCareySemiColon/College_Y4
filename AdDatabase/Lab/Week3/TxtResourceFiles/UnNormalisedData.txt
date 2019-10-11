@@ -1,0 +1,22 @@
+Create Table Apps_NOT_Normalized(
+
+  App_No integer, --only unique to year submitted - otherwise not unique
+  App_Year integer,
+
+  StudentID integer, ---------------------------- unique
+  StudentName varchar(50),
+  Zipcode
+
+  ZipCode varchar(7), --unique
+  Street varchar(100),
+  State varchar(30),
+  
+  ReferenceName varchar(100),
+  RefInstitution  varchar(100),
+  ReferenceStatement varchar(500),
+
+  PriorSchoolId integer, -----------------------unique
+  PriorSchoolAddr varchar(100),
+  GPA number(2)
+
+);
