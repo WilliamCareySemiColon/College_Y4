@@ -8,3 +8,5 @@ INSERT INTO MATCHES VALUES (MATCHES_ID.nextval, 'Barcelona','Real Madrid',5,1,'L
 INSERT INTO MATCHES VALUES (MATCHES_ID.nextval, 'Arsenal','Real Madrid',0,1,'Champions League');
 
 INSERT INTO MATCHES VALUES (MATCHES_ID.nextval, 'Chelsea','Barcelona',3,2,'Champions League');
+
+COMMIT;
