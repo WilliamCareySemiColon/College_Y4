@@ -1,5 +1,4 @@
 labs to complete
-	DB
 	Rich Web
 
 optional
