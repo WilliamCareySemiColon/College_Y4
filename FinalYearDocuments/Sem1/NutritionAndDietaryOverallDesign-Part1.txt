@@ -1,0 +1,33 @@
+Develop using
+	C# programming, 
+	modern website architecture tools (HTML5, CSS3 etc), 
+	JavaScript libraries (jQuery, Bootstrap, Angular) in visual studios
+ 	windows environment. 
+ 
+Microsoft IDE from the development
+	 the middleware is ASP .NET framework 
+	 is a web application, any device with internet access can access 
+	Research other APIs, such as RESTful
+
+Feature driven development software methodology will be designed using client - server Architecture design pattern.
+
+Outline the main business requirements using various reviewed iterations of prototypes. 
+research the various techniques and technologies to handle the different requests for web application. 
+
+document my works on a weekly basis combined with tests 
+	configuration of the application & the design pattern 
+
+To obtain layout and requirements for the app, speak to people whom are in the health/nutrient field 
+
+Testing involves 
+	manual Testing from professionals and ordinary users 
+	Selenium (Front-end testing), Nuit (Business Logic Testing) & DbFit (Database Testing)
+
+Use the git server control to assist me in managing the application.
+
+Once each part is completed, I will use a combination of the Selenium (Front-end testing) Framework, 
+Nuit (Business Logic Testing) and DbFit (Database Testing) to run the tests on the system features. 
+I will also get peers to manually test the system to get feedback,
+ 
+The evaluation phase would incorporate the feedback of the peers whom have tested the system, 
+using the 10 heuristics and comparing with similar technologies to ensure it matches the minimum operation standards
