@@ -1,4 +1,77 @@
+/*Main body CSS*/
 body
 {
-    background-color: aqua;
+    background-color: darkblue;
+    color: white;
+    size: 2em;
+}
+/*The section to deal with the div for searching for users input*/
+#SeachUserInput
+{
+    width: 60%;
+    height: 2em;
+    margin-left: 5%;
+}
+
+#SeachUserButton
+{
+    width: 30%;
+    height: 2.5em;
+    border-radius: .75em;
+    margin-left: 3%;
+}
+/*The user profile and repos div section*/
+/*Outer Section*/
+#OuterUserProfile, #OuterUserRepos
+{
+    width:40%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+#OuterUserProfile
+{
+    float:left;
+}
+
+#OuterUserRepos
+{
+    float: right;
+}
+
+/*The inner section for the divs with the profile and repo details*/
+#UserProfile, #UserRepos
+{
+    border: 1px solid black;
+    width:100%;
+}
+
+#UserRepos
+{
+    max-height: 27em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/*Img section*/
+#UserProfileImage
+{
+    width: 90%;
+    border: 1px solid black;
+    margin: 5%;
+}
+#PlaceholderImage
+{
+    width: 90%;
+    margin: inherit;
+    height: 14em;
+}
+
+/*Information sector on the profile and repo information*/
+.DisplayUserInfo, .UserReporColloection
+{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
 }
