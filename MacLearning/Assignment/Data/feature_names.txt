@@ -14,4 +14,3 @@ capital-loss
 hours-per-week
 native-country
 target
-

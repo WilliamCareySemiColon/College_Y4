@@ -5,7 +5,7 @@ optional
 	Dis Sys
 
 Assignments
-	Mac Learning - Deadline 25th october
+	Mac Learning - Deadline 25th october - finish the written report
 
 Final Year Project
 	Sort out documentation and research for the project
