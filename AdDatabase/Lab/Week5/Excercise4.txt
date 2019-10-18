@@ -1,0 +1,24 @@
+Let us consider again the two trees of exercises 1 and 2. Call exercise 1 “btree”, exercise 2 “simple tree”. 
+
+The database is receiving queries. Each query is a question of the kind: “Is number x in the database?” 
+Where x is a number from 1 to 20. The tree is used to check if the number specified is in the index. 
+
+Each query requires to visit part of the tree in order to be answered. For instance, 
+if the query is looking for a number that is in the root node, only the root node will be visited. 
+
+If the number is in a node that is a child of a child of the root node, 
+3 nodes will be visited (=we have to go down three levels to find the number) and so on. 
+A query for a number that is not in the index will require to visit all the levels (one node each level) 
+until a terminal node is reached. The highest is the number of nodes visited, the less efficient is
+ the query. If we assume that each number requested has the same likelihood (=each number from 1 to 
+20 has the same 5% chance to be requested), can you estimate the gain in performance of the B-tree
+ compared with the simple tree? 
+
+You need to find: 
+	-the average number of nodes that needs to be visited for a b-tree to check if 
+	a number is in the index or not. 
+	- the average number for the simple tree 
+	- the gain in performance (for instance “the b-tree is 10% faster because it needs to visit 
+	on average 10% less number of nodes”). 
+ 
+ 

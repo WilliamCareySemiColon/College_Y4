@@ -1,0 +1,5 @@
+The average amount of steps to find a number in the b tree is 2.6
+
+The average amount of steps to find a number in the s tree is 2.8
+
+Therefore, the b tree is 7.69% (round to 2 decimal place) faster then the s tree

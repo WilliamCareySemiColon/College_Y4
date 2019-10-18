@@ -1,0 +1,6 @@
+The main difference between the two is as the result of the none balancing rule, the tree skews to
+the right side. 
+
+The main consquence is the searching pattern, for the bigger numbers, would take longer time with more 
+memory management as you go deeper into the levels. The breath-first search algorithm is also not ideal 
+with this model design as oppose to the rule of the balancing tree model.
