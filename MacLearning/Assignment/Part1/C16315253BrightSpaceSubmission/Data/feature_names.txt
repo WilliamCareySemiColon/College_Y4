@@ -1,15 +1,16 @@
+id
 age
 workclass
+fnlwgt
 education
-native-country
-martial-status
+education-num
+marital-status
 occupation
 relationship
 race
+sex
 capital-gain
 capital-loss
-hours per week
+hours-per-week
 native-country
-
-sex
 target
