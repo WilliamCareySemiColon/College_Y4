@@ -44,6 +44,10 @@ function GetUserRepoDetails()
                 //console.log(UserProfileRepoXHR.response);
                 SetCollectionOFRepo(JSON.parse(UserProfileRepoXHR.response));
             }
+            else
+            {
+                alert("Repos cannot be found");
+            }
         }
     };
     
