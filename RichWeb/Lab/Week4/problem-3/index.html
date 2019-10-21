@@ -5,11 +5,11 @@
         <link rel = "stylesheet" type = "text/css" href = "CSS/index.css">
         <script src = "JS/index.js"></script>
     </head>
-    <body onload="Test()">
+    <body>
         <!--User search section-->
         <div id="SearchGitUser">
             <input type = "text" id = "SeachUserInput" class = "formInput" placeholder="Username">
-            <button id = "SeachUserButton">Search</button>
+            <button id = "SeachUserButton" onclick="GetUserRepoDetails()">Search</button>
         </div>
         <!--User profile section-->
         <div id="OuterUserProfile">
