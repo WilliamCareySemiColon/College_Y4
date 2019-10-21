@@ -23,6 +23,12 @@ function GetUserRepoDetails()
                 //console.log(UserProfileXHR.response);
                 let UserProfileResponse = JSON.parse(UserProfileXHR.response);
                 FilterOutJSONObject(UserProfileResponse);
+                UserProfileRepoXHR.open("get",UserProfileRepoStr,true);
+                UserProfileRepoXHR.send();
+            }
+            else
+            {
+                alert("Profile cannot be found");
             }
         }
     };
@@ -49,8 +55,6 @@ function GetUserRepoDetails()
     UserProfileXHR.open("get", UserProfileStr, true);
     UserProfileXHR.send();
 
-    UserProfileRepoXHR.open("get",UserProfileRepoStr,true);
-    UserProfileRepoXHR.send();
 }
 
 //function to get the main details of the user and assign them to the fields inside the elements
