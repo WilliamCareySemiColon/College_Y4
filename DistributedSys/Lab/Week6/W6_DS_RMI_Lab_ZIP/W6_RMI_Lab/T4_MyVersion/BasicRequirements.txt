@@ -1,0 +1,22 @@
+Design and implement in Java RMI a chat application with the following requirements: 
+ 
+Clients connect to a centralised server. 
+
+Clients can start a new chat room by supplying the theme (topic) for the room. 
+
+Other clients can then lookup rooms by their theme. 
+
+Once clients have either created a room or looked up a room, they can then send a message into the room. 
+
+Clients can also ask for the contents of the last message sent to the room. 
+ 
+NOTE - THIS IS THE SAME AS T3 IN TERMS OF WHAT ARE THE SOFTWARE REQUIREMENTS
+THE ONLY DIFFERENCE IS THE ACTUALLY CONTENTS 
+
+IE INSTEAD OF COLLECTION OF SHAPES, THERE IS A COLLECTION OF ROOMS AND INSTEAD OF A COLLECTION OF VERTICES
+WITHIN THE SHAPE, THERE IS A COLLECTION OF NOTES INSIDE THE ROOMS
+
+ALSO INSTEAD OF IDS FOR ROOMS, THERE IS UNIQUE THEME FOR THE ROOM
+
+AN ADDITIONAL METHOD NOT IN THE PREVIOUS IS THE CAPABILITY TO DELETE THE ROOMS ONCE THEY ARE COMPLETED, 
+HOWEVER THIS NEEDS VALIDATION FROM THE ORIGINAL CREATOR
