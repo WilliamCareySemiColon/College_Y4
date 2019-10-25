@@ -1,0 +1,31 @@
+Er diagram
+-----------------
+
+bank - bankid, name
+
+Region - regionid, regionname, country
+
+Customer - ccode, name, address, phone, bday, gender, salary
+
+branch - branchid, name, address, regionid (fk), bankid (fk)
+
+Account - aCode, openingdate, balance, branchid (fk), accounttype, ccode (fk)
+
+tranaction - tcode, date, type, amount, aCode (fk)
+
+SR Diagram
+-------------------
+
+Date - DateId, DayDate, DayDate_YYYYMMDD, DayOfWeekName ,DayOfWeekNameAbbrv ,DayNumberInWeek ,DayNumberInMonth 
+,DayNumberInQuarte ,DayNumberInYear ,WeekDayIndicator ,WeekEndIndicator ,Week_YYYYWW ,WeekNumberInYear ,Month_YYYYMM ,MonthName ,MonthNameAbbrv 
+,MonthNumberInYear ,Quarter_YYYYQ ,QuarterName ,QuarterNameAbrv ,QuarterNumberInYear ,Year
+
+bank - bankid, name
+
+BranchRegion - Region - regionid, regionname, country, branchid, name, address
+
+Customer - ccode, name, address, phone, bday, gender, salary
+
+tranaction - tcode, date, type, amount, aCode (fk)
+
+Account - aCode, openingdate, balance, branchid (fk), accounttype, ccode (fk), bankid (fk), tcode (fk)
