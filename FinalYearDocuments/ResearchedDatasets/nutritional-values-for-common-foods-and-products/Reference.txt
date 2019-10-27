@@ -1,0 +1,21 @@
+https://www.kaggle.com/trolukovich/nutritional-values-for-common-foods-and-products/download
+
+date accessed: 27-10-2019
+
+key notes about this csv file
+
+spent 6 hours researching different webistes about the dataset regarding food, in which I have visited 
+kaggle, data.gov and data.world sites on the diffent key results which included but not limited to the following
+
+Food
+Fruit
+Veg
+Grains
+Beans
+
+As i could not find this dataset initially. For a while I did not think a dataset existed and looked into 
+api and online databases as alternative. This lead me onto various sites such as the edamam deveoper site
+fooDB, nutridb.
+
+Eventually, I came across the dataset which, while it is not optimised for querying and analysing, 
+contained the key I needed. The other piece of work needed to be completed now starts
