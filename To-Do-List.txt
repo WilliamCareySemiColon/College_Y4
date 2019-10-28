@@ -1,5 +1,11 @@
+Assignment:
+	Rich Web
+	Dis Sys
+	Daabase
+
 optional
 	Dis Sys
+	Machine Learning
 
 Final Year Project
 	Sort out documentation and research for the project
