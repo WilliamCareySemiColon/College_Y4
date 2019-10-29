@@ -1,0 +1,27 @@
+Starter reference point for mobile phones
+
+https://www.simform.com/mobile-app-developers-database-selection/ 
+
+date accessed: 29/10/2019
+
+relational database
+
+MySQL
+PostgreSQL
+MariaDB
+SQLite
+ORMLite
+Berkeley DB
+
+non-relational
+Redis
+MongoDB
+Cassandra
+RethinkDB
+Riak DB
+CouchDB
+Couchbase
+ArangoDB
+Memcached
+InfluxDB
+Realm DB
