@@ -1,0 +1,85 @@
+The normalized tables are usually more storage-efficient. 
+What is the gain in storage efficiency 
+(=the size in bytes of the normalized tables divided by the size of the starting non normalized table)?   
+
+1238 / 1003 = 1.234297108673978
+
+This is for one dataset, but when duplication of information are being used inside the non-normalised data, as you add information
+to the tables, the size comparison would come at normalised tables divided by non-normalised would be less then 1.
+
+So, the answer is between 1.24 (starting off with the database) to eventually less then 1 (as you add hundreds to thousands of rows to 
+the database
+
+
+--calculations done underneath
+Unnormalised table
+
+App_No integer,    									4
+StudentID integer,									4
+StudentName varchar(50),							50
+Street varchar(100),								100		154
+State varchar(30),									30
+ZipCode varchar(7),									7
+App_Year integer,									4
+ReferenceName varchar(100),							100		141		295
+RefInstitution  varchar(100),						100
+ReferenceStatement varchar(500),					500		600
+PriorSchoolId integer,								4
+PriorSchoolAddr varchar(100),						100
+GPA number(2)										4		108		708		1,003
+  
+CREATE TABLE ADDRESS - 137
+(
+    ZipCode varchar(7),
+  	Street varchar(100),
+  	State varchar(30)    
+);
+
+CREATE TABLE STUDENT - 61
+(
+    StudentID integer, 
+  	StudentName varchar(50),
+	Zipcode varchar(7)
+);
+
+CREATE TABLE PRIORSCHOOL - 104							302
+(
+    PriorSchoolId integer, 
+  	PriorSchoolAddr varchar(100)
+);
+
+CREATE TABLE StudentPriorSchool - 12
+(
+	StudentID integer,
+	PriorSchoolId integer,
+  	GPA number(2)
+);    
+
+CREATE TABLE REFERENCESPEC - 200
+(
+    ReferenceName varchar(100),
+    RefInstitution  varchar(100)
+);    
+
+CREATE TABLE StudentReference - 704						916				1218
+(
+	StudentID integer,
+	ReferenceName varchar(100),
+	RefInstitution  varchar(100),
+  	ReferenceStatement varchar(500)
+);
+
+CREATE TABLE ApplicationSpec - 8
+(
+	App_No integer,
+	App_Year integer
+);
+
+CREATE TABLE StudentApp - 12							20				1238
+(
+	StudentID integer,
+	App_No integer,
+	App_Year integer
+); 
+  
+  

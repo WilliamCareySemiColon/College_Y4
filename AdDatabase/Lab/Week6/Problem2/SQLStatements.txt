@@ -1,0 +1,19 @@
+--answer business requirement 1,4,5
+SELECT * FROM USER
+INNER JOIN AccountType USING AccountTypeID
+INNER JOIN RepoSpec USING RepoID
+--check if the user has authecaite their account
+WHERE UserVerified == 1
+--Check if there exists a repo, allowing the possibility of sharing work
+AND RepoName IS NOT NULL
+--check if the work can be protected
+AND AccountType.lower() LIKE 'STUDENT' OR AccountType.lower() LIKE 'ENTERPRISE'
+
+--Answer 2 and 3
+SELECT * FROM USER
+INNER JOIN RepoSpec USING RepoID
+INNER JOIN Organisation USING OrganisationID
+--CHECK if there exists work that we can monitor
+WHERE fileID IS NOT NULL
+--Checking if there is a organisation that exists, allowing for callboratition
+AND OrganisationRoleID IS NOT NULL

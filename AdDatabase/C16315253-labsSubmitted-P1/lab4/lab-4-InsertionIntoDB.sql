@@ -1,0 +1,15 @@
+INSERT INTO TEAM VALUES ('Arsenal','England');
+INSERT INTO TEAM VALUES ('Chelsea','England');
+INSERT INTO TEAM VALUES ('Manchester United','England');
+INSERT INTO TEAM VALUES ('Everton','England');
+INSERT INTO TEAM VALUES ('Real Madrid','Spain');
+INSERT INTO TEAM VALUES ('Barcelona','Spain');
+INSERT INTO TEAM VALUES ('Atletico Madrid','Spain');
+INSERT INTO TEAM VALUES ('Sevilla','Spain');
+
+SELECT * FROM TEAM;
+SELECT * FROM LOGTEAM;
+SELECT * FROM MATCHES;
+SELECT * FROM EUROLEAGUE;
+
+COMMIT;

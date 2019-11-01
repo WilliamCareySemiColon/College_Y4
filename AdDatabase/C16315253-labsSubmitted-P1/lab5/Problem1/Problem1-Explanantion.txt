@@ -1,0 +1,14 @@
+The Account is the main part of the schema due to the connection to 
+each part of the application. So it would make sense to set this part to 
+the fact of the application. Another key decision would be the combination
+of this to be the most descriptive of the model we are trying to implement
+and the fact most banks use accounts to indentify their users as business
+requirements. 
+
+All the other parts are additional dimensions to the fact as they provide 
+a way to deploy a more comprehensive study of the schema. However, they have
+a dependency of the fact to actual provide description suitable for analysis.
+Otherwise they only provide vague or simply solutions.
+
+The account also contained the highest granularity (GRAIN) level, which 
+is another reason to set it as the fact of the schema. 

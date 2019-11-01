@@ -1,0 +1,26 @@
+Address Table
+	zipcode -- PK
+	Address	
+
+Person table
+	id -- PK
+	fname
+	sname
+	phoneNumber
+	zipcode -- FK
+
+Purchase Table
+	id -- FK
+	codeNumber -- FK --(This plus id = PK)
+	purchaseDate
+	salePrice
+
+Artist Table
+	codeNumber -- PK
+	ArtistName
+	PaintCode  --FK
+	
+Painting table
+	PaintCode -- PK
+	paint_code
+	Title

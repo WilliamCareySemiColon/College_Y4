@@ -1,0 +1,15 @@
+Gallery table
+
+id -- PK
+fname
+sname
+phoneNumber
+zipcode 
+address
+
+codeNumber --PK
+purchaseDate
+salePrice
+ArtistName
+paintcode
+Title

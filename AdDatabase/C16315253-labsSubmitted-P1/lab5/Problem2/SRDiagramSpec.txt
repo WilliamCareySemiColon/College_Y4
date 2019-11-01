@@ -1,0 +1,19 @@
+Date - DateId, DayDate, DayDate_YYYYMMDD, DayOfWeekName ,DayOfWeekNameAbbrv 
+,DayNumberInWeek ,DayNumberInMonth ,DayNumberInQuarte ,DayNumberInYear 
+,WeekDayIndicator ,WeekEndIndicator ,Week_YYYYWW ,WeekNumberInYear 
+,Month_YYYYMM ,MonthName ,MonthNameAbbrv ,MonthNumberInYear ,Quarter_YYYYQ ,
+QuarterName ,QuarterNameAbrv ,QuarterNumberInYear ,Year
+
+AccountType - UserName, AccountType, AccountTypeID, isBillable, 
+billingInterval, IsOfferAvail
+
+Organisation - UserName, OrganisationName, OrganisationID, CreatedBy, 
+OrganisationRoleID, OrganisationRole, RolePermissions, RepoID, 
+InnerOrganisationID, RoleDateCreated,RoleCreatedBy
+
+RepoSpec - RepoName, RepoURL, RepoID, fileName, fileID, 
+fileVersion, OrganisationID, AccountTypeID, IsPrivate, 
+DateCreated, RepoDescription, UserName, RepoRefID, RepoDetailsID
+
+User - Username, Name, email, Password, UserVerified, Description, 
+AccountTypeID, RepoID, OrganisationID, DateCreated, DateID
