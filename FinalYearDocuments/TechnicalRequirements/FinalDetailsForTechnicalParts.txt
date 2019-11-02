@@ -1,0 +1,16 @@
+Software used for Mobile app development
+
+	Xamarian IDE
+	Visual Studio Community Edition
+	Azure Cloud Services
+
+due to the fact they are all microsoft services, which 
+intergrates together nicely, and Xamarian is the closets to 
+match all the technical requirements for the application.
+
+Database supported for students inside the application:
+
+SQL database - Microsoft SQL server:
+
+3 Tier Client - Server Architecture
+

@@ -1,0 +1,145 @@
+The six most popular IDE for Hybrid mobile applications (based off 7 links for most recommended) are:
+
+1)
+	PhoneGap IDE - Not using
+	Ionic - Not using
+
+2)
+	React Native
+	Xamarian - This one will be used due to ability to connect to cloud database
+
+3)
+	Framework 7 - Not using
+	Flutter - Not using
+
+Start research - Links researched are belowed:
+
+Phonegap: 
+https://www.orioninfosolutions.com/blog/phonegap-what-is-good-and-what-is-bad/
+date accessed: 01/11/2019
+	Pros
+		PhoneGap provides easy testing and maintenance of applications.
+		PhoneGap supports multiple platforms such as Android, iOS, Window, webOS.
+		PhoneGap is best technology to use as it do not require features of native applications.
+		It provides cross platform to application to run and with single coding and flexible designs.
+		There is no need for additional skills to develop the app as they are coded in web languages i.e. HTML, so easy to write and understand.
+		PhoneGap is possible to access some of the APIs such as camera, Geo-location and many more features.
+		It provides fast access and security to in-build features.
+		Even if the apps are developed on PhoneGap, they are easily downloadable from app stores.
+		Provides plugins that are very useful and easy to access the features.
+	Cons
+		PhoneGap having some of the drawbacks also as it leads to decrease in the performance of the application Such as:
+		PhoneGap Apps are very poor in performance, they are not recommended for the gaming technologies as compared to native apps.
+		PhoneGap apps do not have sufficient amount of widgets and not the best choice as there is lack of functionalities.
+		While working with native apps, PhoneGap apps become inefficient.
+		PhoneGap do not having the look and appearance as good as native apps.
+		PhoneGap are not as fast in providing the access and control to the user and slow processing.
+		While PhoneGap is written in well managed documents, but some of the old documents may be out dated or do not get updates regularly.
+
+Ionic:
+https://www.altexsoft.com/blog/engineering/the-good-and-the-bad-of-ionic-mobile-development/
+date accessed: 01/11/2019
+	Pros
+		A single codebase across various platforms
+		Popular technologies and ease of learning
+		Wide range of integration capabilities and plugins
+		An extensive choice of UI elements and quick prototyping
+		Testing convenience
+		Concise documentation
+		Strong community
+	Cons
+		Performance is lacking with native applications
+		Plugin-dependent system
+		Absence of hot reloading
+		Possible security issues
+		Application size
+
+Ionic over React Native/Xamarin/Native application
+Ionic use is justified when you have strong expertise in using web technologies and Angular and experience 
+in utilizing various JavaScript and Angular libraries. 
+
+React Native:
+https://www.altexsoft.com/blog/engineering/the-good-and-the-bad-of-reactjs-and-react-native/
+date accessed: 01/11/2019
+	Pros
+		Virtual DOM in ReactJS makes user experience better and developer’s work faster
+		Permission to reuse React components significantly saves time
+		One-direction data flow in ReactJS provides a stable code
+		An open-source Facebook library: constantly developing and open to the community
+		Redux: convenient state container
+		Wide React and Redux toolset
+
+		React Native uses JavaScript – fast and popular programming language
+		Native controls and native modules in React Native improve performance
+		React Native contains all ReactJS features, aimed at improving UI
+	Cons
+		High pace of development
+		Poor documentation
+		‘HTML in my JavaScript!’ – JSX as a barrier
+		Additional SEO hassle
+
+		Documentation
+		Expertise for native modules
+		Third-party components
+		Lagging SDK Updates
+		Instability, compatibility issues, and errors
+
+Xamarian
+https://www.altexsoft.com/blog/mobile/pros-and-cons-of-xamarin-vs-native/
+date accessed: 01/11/2019
+	Pros
+		One Technology Stack to Code for All Platforms
+		Performance Close to Native
+		Native User Experiences
+		Full Hardware Support
+		Open Source Technology with Strong Corporate Support
+		Simplified Maintenance
+		Complete Development Ecosystem
+		Xamarin.Forms: a framework for simple apps and prototypes
+		Xamarin.Forms Live Player
+		Building apps for Macs with Xamarin.Mac Tool
+		Xamarin Learning Resources
+		Xamarin support of TVs, wearables, and IoT
+	Cons
+		Slightly Delayed Support for the Latest Platform Updates
+		Limited Access to Open Source Libraries
+		High Cost for Professional and Enterprise Use
+		Xamarin Talent Pool and Community Constraints
+		Basic Knowledge of Native Languages Required
+		Not Suitable for Apps with Heavy Graphics
+		Larger App Size
+		Compatibility Issues with Third-Party Libraries and Tools
+		Stability Issues
+
+
+Framework 7
+https://techbuzztalk.com/best-hybrid-app-development-frameworks/
+date accessed: 01/11/2019
+	Pros
+		Very fast
+		Alive forum community
+		Native scrolling including fast animations
+		Easy to use and learn if you know the CSS, HTML or JavaScript.
+		Completely free from the license fee
+	Cons
+		Confusion over platform support
+		Average documentation
+		If you don’t want HTML 5 mark up based solutions then should not go for this
+
+Flutter: 
+https://medium.com/asos-techblog/flutter-vs-react-native-for-ios-android-app-development-c41b4e038db9
+date accessed: 01/11/2019
+	Pro
+		Flutter does its own UI drawing
+		Hot reloading
+		small reusable components that react to a change in the ‘state’
+		Dart is simple but a powerful and complete language, comparable to Swift, Kotlin or Java
+		Flutter and Dart have built-in support for both unit testing for logic, and widget testing 
+		built-in support for theming
+		creating an app for both platforms at the same time makes it much easier to keep them aligned at all times.
+	Cons
+		Flutter paints the UI on its own custom way, it doesn’t create native components.
+		nowhere as rich as the plugins you can find for React Native and even Xamarin
+		Debugging is not at its best.
+		The error screen or logs that you get when there’s a layout error (or something else at a lower level) can be very confusing and obscure
+		there’s not much separation / Clean Architecture and MVP

@@ -1,0 +1,16 @@
+https://www.excellentwebworld.com/hybrid-app-examples/
+
+date-accessed: 02/11/2019
+
+The above list displays examples of applications that are 
+hybrid with relative to their tech used
+
+https://www.lifewire.com/review-why-gmail-is-good-and-bad-2483272
+
+date accessed: 02/11/2019
+
+review about gmail
+
+https://dotnet.microsoft.com/apps/xamarin/customers
+
+apps developed using xamarian ide

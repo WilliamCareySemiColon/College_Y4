@@ -1,23 +1,5 @@
-Website evaluation tool
-
-https://www.designbombs.com/top-10-free-website-speed-test-tools/
-date accessed: 29/10/2019
-name: design bombs
-
-The above evaluations for speed
-
-https://usabilitygeek.com/best-ux-tools-user-research-user-testing-2018/
-date accessed: 29/10/2019
-site name: usability geeks
-
-The above test for usability
-
 mobile analytics tools summary
 https://mopinion.com/mobile-app-analytics-tools/
-site accessed: 29/10/2019
-
-web analytics tools
-https://www.webfx.com/blog/web-design/10-promising-free-web-analytics-tools/
 site accessed: 29/10/2019
 
 --sites to look further into

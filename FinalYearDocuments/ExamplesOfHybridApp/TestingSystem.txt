@@ -1,0 +1,9 @@
+https://www.browserstack.com/guide/mobile-application-testing-frameworks##targetText=Selendroid%20is%20also%20known%20as,Selenium%20for%20cross%20browser%20testing.
+
+the different systems to test mobile applications
+
+date accessed: 02/11/2019
+
+http://www.mindfiresolutions.com/blog/2018/05/selenium-vs-appium/##targetText=Selenium%20is%20a%20test%20automation,web%20services%20and%20API%20test.&targetText=On%20the%20other%20hand%2C%20Appium%20comes%20with%20features%20to%20automate,mobile%20web%2C%20and%20hybrid%20apps.
+
+date accessed: 02/11/2019
