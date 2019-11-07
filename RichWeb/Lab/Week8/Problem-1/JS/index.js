@@ -11,7 +11,7 @@ var tableRowId = 1;
 function AddANoteToDiv()
 {
     //adding the new note to the collection
-    let note = prompt("What is you note", "Sample")
+    let note = prompt("What is you note", "Sample");
     //ensure the note is not empty
     if(note == null)
     {

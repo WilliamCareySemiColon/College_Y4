@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href = "CSS/index.css"/>
+    </head>
+    <body>
+        <!--Section to deal with notes handling-->
+        <section>
+                <h2>My Notes</h2>
+            <div id = "timer-input">
+                <div id="hourinput">
+                    <input type = "number" class="timeinputarea">
+                </div> 
+                <div class="fullcolon">:</div>
+                <div id="minute">
+                    <input type="number"class="timeinputarea">
+                </div> 
+                <div class="fullcolon">:</div>
+                <div id="secondinput">
+                        <input type="number"class="timeinputarea">
+                </div>
+            </div>
+            <div>
+                <button id="Add" onclick="test()">Add a note</button>
+            </div>
+        </section>
+        <script src="https://npmcdn.com/@reactivex/rxjs@5.0.0-beta.3/dist/global/Rx.umd.js"></script>
+        <script src="JS/index.js"></script>
+    </body>
+</html>

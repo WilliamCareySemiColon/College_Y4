@@ -1,0 +1,34 @@
+/*Main CSS for the page*/
+html,body{
+    background-color: navy;
+    color: white;
+}
+
+#timer-input
+{
+    padding: 0;
+    margin: 0;
+    border: 1px solid white;
+}
+
+#timer-input div
+{
+    display: inline-block;
+    font-size: 15em;
+    height: fit-content;
+    border: 1px solid white;
+}
+
+#timer-input div input
+{
+    height: 15em;
+    width: 20em;
+    
+}
+
+.fullcolon
+{
+    float: center;
+    margin: 0;
+    padding: 0;
+}
