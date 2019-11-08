@@ -3,32 +3,94 @@ html,body{
     background-color: navy;
     color: white;
 }
-
+/*Timer input section*/
 #timer-input
 {
     padding: 0;
     margin: 0;
-    border: 1px solid white;
+    height: 5em;
+    width:100%
 }
 
 #timer-input div
 {
     display: inline-block;
-    font-size: 15em;
     height: fit-content;
-    border: 1px solid white;
+    padding: 0;
+    margin: 0;
 }
 
-#timer-input div input
+.timeinput
 {
-    height: 15em;
-    width: 20em;
-    
+    width: 29%;
 }
 
 .fullcolon
 {
+    width: 5%;
+}
+
+.timeinputarea, .colonDisplay
+{
+    font-size: 44pt;
+}
+.timeinputarea
+{
+    width: 100%;
+}
+
+.colonDisplay
+{
+    width: 100%;
     float: center;
-    margin: 0;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+/*Button Section*/
+#StartTimerSection
+{
+    height: 5em;
+    width: 100%;
+}
+
+#StartTimer
+{
+    height: inherit;
+    width: 50%;
+    margin-left: 15%;
+}
+
+#StartTimer div
+{
+    display: inline-block;
+}
+#ButtonSection 
+{
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+
+#ButtonTextSection
+{
+    width: 50%;
+    height: inherit;
+    padding-top: 1em;
+    padding-right: 8.5em;
+}
+#buttonImg
+{
+    height: inherit;
+    width: inherit;
     padding: 0;
 }
+
+#ButtonText
+{
+    width: inherit;
+    height: inherit;
+    font-size: 3em;
+    float: center;
+} 
