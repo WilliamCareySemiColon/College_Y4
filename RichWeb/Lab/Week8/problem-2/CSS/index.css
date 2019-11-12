@@ -79,6 +79,11 @@ html,body{
     height: inherit;
     padding-top: 1em;
     padding-right: 8.5em;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: static;
 }
 #buttonImg
 {
@@ -94,3 +99,10 @@ html,body{
     font-size: 3em;
     float: center;
 } 
+
+/*Display the timer to the user*/
+#DisplayTimeCountdown
+{
+    margin-left:30%;
+    font-size: 5em;
+}

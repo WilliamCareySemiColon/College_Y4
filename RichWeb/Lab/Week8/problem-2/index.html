@@ -6,35 +6,35 @@
     <body>
         <!--Section to deal with the timer-->
         <section>
-                <h2>Timer System</h2>
-
+            <h2>Timer System</h2>
             <div id="timer-input">
                 <div class = "timeinput">
-                    <input type = "number" class="timeinputarea">
+                    <input type = "number" class="timeinputarea" id = "hourInput" placeholder="h">
                 </div>
                 <div class="fullcolon">
                     <input class="colonDisplay" value = ":" disabled>
                 </div>
-                <div id="minuteinput" class = "timeinput">
-                    <input type = "number" class="timeinputarea">
+                <div class = "timeinput">
+                    <input type = "number" class="timeinputarea" id="minuteInput" placeholder="m">
                 </div>
                 <div class="fullcolon">
                     <input class="colonDisplay" value = ":" disabled>
                 </div>
-                <div id="secondinput" class = "timeinput">
-                    <input type = "number" class="timeinputarea">
+                <div class = "timeinput">
+                    <input type = "number" class="timeinputarea" id="secondInput" placeholder="s">
                 </div>
             </div>
             <div id = "StartTimerSection">
-                <button id="StartTimer" >
+                <button id="StartTimer" onclick = "GetCreditialsForTimer()">
                     <div id="ButtonSection">
                         <img id = "buttonImg" src = "images/Play-Button-715x715.png">
                     </div>
                     <div id = "ButtonTextSection">
                         <span id = "ButtonText">Start Countdown</span>
                     </div>
-                </button> <!-- onclick="test()"-->
+                </button>
             </div>
+            <div id="DisplayTimeCountdown"></div>
         </section>
         <script src="https://npmcdn.com/@reactivex/rxjs@5.0.0-beta.3/dist/global/Rx.umd.js"></script>
         <script src="JS/index.js"></script>
