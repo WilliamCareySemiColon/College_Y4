@@ -1,7 +1,8 @@
 //variables to gather the data needed for the timer
 var CountDownTimer = new Date();
 var TempDate = null;
-var DisplayTimeCountdown = null;
+//var DisplayTimeCountdown = null;
+var DisplayTimeCountdown = Rx.Observable.interval(1000);
 var TimerDiv = document.getElementById("DisplayTimeCountdown");
 var StartTimer = document.getElementById("StartTimer");
 
@@ -10,6 +11,7 @@ StartTimerClicked.subscribe(() => GetCreditialsForTimer());
 
 function GetCreditialsForTimer()
 {
+    TimerDiv.innerHTML = "";
     StartTimer.disabled = true;
 
     let HourInput = document.getElementById("hourInput").value;
@@ -37,43 +39,44 @@ function GetCreditialsForTimer()
     }
     else
     {
-        DisplayTimeCountdown = setInterval(function ()
-        {
-            let TimerToGetTo = CountDownTimer.getTime();
-            let currentTime = (new Date()).getTime();
-
-            let timerLeft = TimerToGetTo - currentTime;
-
-            var hours = Math.floor((timerLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((timerLeft % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((timerLeft % (1000 * 60)) / 1000);
-
-            let TimeDisplayString = "";
-
-            if (hours > 0)
-            {
-                TimeDisplayString = TimeDisplayString + TestSingleDigit(hours) + ":";
-            }
-
-            if(minutes > 0)
-            {
-                TimeDisplayString = TimeDisplayString + TestSingleDigit(minutes) + ":";
-            }
-
-            if(seconds > -1)
-            {
-                TimeDisplayString = TimeDisplayString + TestSingleDigit(seconds);
-            }
-            TimerDiv.innerHTML = TimeDisplayString;
-
-            if(timerLeft < 0)
-            {
-                clearInterval(DisplayTimeCountdown);
-                TimerDiv.innerHTML = "Timer expired";
-                StartTimer.disabled = false;
-            }
-        },1000);
         SetTheTimer(HourParameter,MinuteParameter,SecondParameter);
+    }
+}
+function DisplayTimer()
+{
+    let TimerToGetTo = CountDownTimer.getTime();
+    let currentTime = (new Date()).getTime();
+
+    let timerLeft = TimerToGetTo - currentTime;
+
+    var hours = Math.floor((timerLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timerLeft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timerLeft % (1000 * 60)) / 1000);
+
+    let TimeDisplayString = "";
+
+    if (hours > 0)
+    {
+        TimeDisplayString = TimeDisplayString + TestSingleDigit(hours) + ":";
+    }
+
+    if(minutes > 0)
+    {
+        TimeDisplayString = TimeDisplayString + TestSingleDigit(minutes) + ":";
+    }
+
+    if(seconds > -1)
+    {
+        TimeDisplayString = TimeDisplayString + TestSingleDigit(seconds);
+    }
+    TimerDiv.innerHTML = TimeDisplayString;
+
+    if(timerLeft < 0)
+    {
+        //clearInterval(DisplayTimeCountdown);
+        TimerDiv.innerHTML = "Timer expired";
+        StartTimer.disabled = false;
+        DisplayTimeCountdown.unsubscribe();
     }
 }
 
@@ -87,6 +90,8 @@ function SetTheTimer(Hour, Minute, Second)
 
     CountDownTimer = new Date(TempDate.getFullYear(), TempDate.getMonth(), 
                 TempDate.getDate(),HourSet,MinuteSet,SecondSet);
+
+    DisplayTimeCountdown.subscribe(() => DisplayTimer());
 }
 
 //functions to test for the different test cases
