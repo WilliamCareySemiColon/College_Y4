@@ -10,12 +10,12 @@ DROP TABLE DATEDIMENSION;
 CREATE TABLE DATEDIMENSION 
 (
     date_sk INTEGER NOT NULL,
-    day VARCHAR2(8) NOT NULL,
-    month VARCHAR2(10) NOT NULL,
+    day INTEGER NOT NULL,
+    month INTEGER NOT NULL,
     year INTEGER NOT NULL,
     week INTEGER NOT NULL,
     quarter INTEGER NOT NULL,
-    dayofweek VARCHAR2(8) NOT NULL,
+    dayofweek INTEGER NOT NULL,
     --constraints
     CONSTRAINT date_pk PRIMARY KEY (date_sk)
 );
@@ -24,7 +24,7 @@ CREATE TABLE TOURNAMENTDIM
 (
     tournament_sk INTEGER NOT NULL,
     tournament_desc VARCHAR2(50) NOT NULL,
-    totalprice NUMBER(4,2) NOT NULL,
+    totalprice float NOT NULL,
     CONSTRAINT tournament_pk PRIMARY KEY (tournament_sk)
 );
 
@@ -50,7 +50,7 @@ CREATE TABLE FACT_RESULTS
     team_sk INTEGER NOT NULL,
     player_sk INTEGER NOT NULL,
     rank INTEGER NOT NULL,
-    price NUMBER(4,2) NOT NULL,
+    price float NOT NULL,
     --setting the foreign keys
     CONSTRAINT date_fk FOREIGN KEY (date_sk)
     REFERENCES DATEDIMENSION (date_sk),
