@@ -6,7 +6,7 @@ The six most popular IDE for Hybrid mobile applications (based off 7 links for m
 
 2)
 	React Native
-	Xamarian - This one will be used due to ability to connect to cloud database
+	Xamarin - This one will be used due to ability to connect to cloud database
 
 3)
 	Framework 7 - Not using
