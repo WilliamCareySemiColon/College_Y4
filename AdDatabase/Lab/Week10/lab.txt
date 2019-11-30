@@ -1,0 +1,15 @@
+--part one
+CREATE (e21Person:Person { name: "Tom", country:"Spain", age: 28, sport: "Footbal" });
+
+MATCH (e:Person {name:"Tom"}),(r:Person {name:"Mary"})
+CREATE(e)-[:FRIEND_OF]->(r);
+
+--part two
+CREATE (e22Person:Person { name: "Bill", country:"Ireland", age: 23, sport: ""});
+
+MATCH (e:Person {name:"Bill"}),(r:Person {name:"Mary"}),(s:Person {name:"Mary"})
+CREATE(e)-[:FRIEND_OF]->(r), (e)-[:FRIEND_OF]->(s);
+
+--part three
+MATCH(e:Person {name:"Denis"})-[:FRIEND_OF*1..3]->(e2:Person) 
+RETURN e.age, e2.age;
