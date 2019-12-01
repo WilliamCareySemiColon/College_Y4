@@ -1,0 +1,35 @@
+https://www.techopedia.com/definition/3734/net-framework-net
+
+date accessed: 25/11/2019
+
+
+
+The .NET framework is a software development framework from Microsoft. It provides a controlled programming environment where software can be developed, installed and executed on Windows-based operating systems.
+
+The principal design features are:
+
+    Interoperability: This allows for .NET-developed programs to access functionalities in programs developed outside .NET.
+    Common Runtime Engine: Also known as the common language runtime, this allows programs developed in .NET to exhibit common behaviors in memory usage, exception handling and security.
+    Language Independence: Common language infrastructure specifications (CLI) allow for the exchange of data types between two programs developed in different languages.
+    Base Class Library: A library of code for most common functions--used by programmers to avoid repetitive rewriting of code.
+    Ease of Deployment: There are tools to ensure the ease of installing programs without interfering with previously installed applications.
+    Security: Programs developed in .NET are based on a common security model. 
+
+
+https://searchcloudcomputing.techtarget.com/definition/Google-Cloud-Platform
+
+
+
+https://aws.amazon.com/what-is-aws/
+
+https://ccbtechnology.com/what-microsoft-azure-is-and-why-it-matters/
+
+https://www.lifewire.com/what-is-google-android-1616887
+
+https://recombu.com/mobile/article/what-is-ios-and-what-does-ios-stand-for
+
+https://www.geeksforgeeks.org/csharp-programming-language/
+
+https://www.geeksforgeeks.org/python-language-introduction/
+
+https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/
