@@ -1,0 +1,9 @@
+https://www.edureka.co/blog/selenium-framework-data-keyword-hybrid-frameworks
+
+date accessed: 08/12/2019
+
+https://www.c-sharpcorner.com/article/introduction-to-nunit-testing-framework/
+
+https://www.tutorialspoint.com/software_testing_dictionary/acceptance_testing.htm
+
+https://dbfit.github.io/dbfit/
