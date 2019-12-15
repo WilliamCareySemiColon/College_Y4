@@ -1,0 +1,83 @@
+/* MongoDB Lab 2
+
+Submission: upload on webocurses your js script(s) to execute the 11 questions described below
+
+Remember:
+- when executing from a script, the output of a query is not automatically redirected to the screen
+In order to print out the output, loop over query's output and call a function like:
+
+function get_results (result) 
+	{ print(tojson(result)); } 
+
+db.col.find(…).forEach(get_results)
+
+- to select a db from a script, you cannot use the command
+use <dbname> 
+as in the mongo shell, but you need to use:
+db = db.getSibling('<dbname>')
+Put it as the first instruction of the js script to be sure you are working with the correct DB 
+
+Remember that the comamnd use <dbname> creates a db if dbname does not exist. Work using a database named with your studentid (all small letters)
+
+- the mongodb operator "out" is used to save the output of an aggregate query or a mapreduce function
+to a collection. Reference here: http://docs.mongodb.org/manual/reference/operator/aggregation/out/
+
+- in order to access a json embedded in another json, use the "." notation.
+For istance:
+
+{ _id: 1, item: "abc123", quantity: 10, metrics: { orders: 2, ratings: 3.5 } }
+
+the orders field is "metrics.orders"
+
+If the embedded object is an array, as in this example: {
+     cust_id: "c3",
+     ord_date: new Date("Nov 04, 2009"),
+     status: 'D',
+     items: [ { item_id: "iphone", qty: 15, price: 900 },
+              { item_id: "lenovo laptop", qty: 1, price: 600 } ]
+}
+
+acces each element by index. For instance the price of the second item is:
+"items(1).price"
+See: http://docs.mongodb.org/manual/tutorial/query-documents/
+
+CURSORS
+=======
+You can assign the output of a query to a cursor.
+From a script:
+
+var myCursor = db.inventory.find( { type: 'food' } );
+
+and then you can loop like this:
+
+while (myCursor.hasNext()) { 	print(tojson(myCursor.next())); }
+
+or myCursor.forEach(printjson);
+
+You can convert the cursor into an array:
+
+var documentArray = myCursor.toArray(); 
+var myDocument = documentArray[3];
+
+or use the cursor directly:
+
+var myDocument = myCursor[3];
+
+Example: to print out all the results of a query:
+
+cursor = db.collection.find();
+while ( cursor.hasNext() ) {
+   printjson( cursor.next() );
+}
+
+Using forEach you can define a function that is applied to each element in the cursor.
+Example:
+
+db.users.find().forEach( function(myDoc) { print( "user: " + myDoc.name ); } );
+
+Documentation:
+https://docs.mongodb.org/v3.0/reference/method/cursor.forEach/
+https://docs.mongodb.org/manual/tutorial/iterate-a-cursor/
+
+--see lab instructions
+*/

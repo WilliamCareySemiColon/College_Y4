@@ -55,9 +55,7 @@ and then you can loop like this:
 
 while (myCursor.hasNext()) { 	print(tojson(myCursor.next())); }
 
-or 
-
-myCursor.forEach(printjson);
+or myCursor.forEach(printjson);
 
 You can convert the cursor into an array:
 
@@ -221,4 +219,3 @@ db.teams.insert({
               { p_id: "Cambiasso", goal: 35, caps: 176, age: 35 },
 			  { p_id: "Palacio", goal: 78, caps: 75, age: 31 } ]
 	 });
-	 

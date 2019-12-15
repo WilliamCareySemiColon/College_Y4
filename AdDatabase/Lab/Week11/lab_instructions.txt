@@ -1,0 +1,26 @@
+#########################################
+Instructions for the labs:
+
+1. create a collections called your_student_id_teams and insert the documents about teams and football players contained in this file
+2. insert two new players
+   - add a player to the Man. Utd. team. Player id:  Keane, 44 yers old, 326 caps, 33 goals.
+   - add a player to the AC Milan team. Player id:  Kaka, 32 yers old, 112 caps, 53 goals.
+3. Find the oldest team
+4. update the number of goal of all the Real Madrid Players by 3 goals each
+5. using a cursor, update the number of caps of all the "Serie A" teams by incrementing them by 10% (round it!)
+6. update the points of Arsenal to be equal to the point of Barcelona
+7. Find all the players over 30 years old containing the string "es"
+8. Using aggregate mongoDB operator, list the total point by league.
+9. Using aggregation, list all the teams by number of goals in descending order.
+10. Compute the average number of goal per match per player and store the output in a collection 
+named student_id_avg_goals.     
+10. Write a js function old_vs_young(x) , that receives a positive integer x representing the age of a player
+and returns 1 if the total number of goals scored by the players with age >= x years is greater than the 
+total number of goals scored by the players with age < x, otherwise it returns 0.
+The function also prints the number of goals for each group of players  
+
+Useful links:
+Aggregation examples: http://docs.mongodb.org/manual/tutorial/aggregation-zip-code-data-set/
+Mapreduce examples: http://docs.mongodb.org/manual/tutorial/map-reduce-examples/
+
+##############################################
