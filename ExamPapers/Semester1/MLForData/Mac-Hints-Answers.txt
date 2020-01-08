@@ -1,0 +1,16 @@
+What is inductive bias?
+Inductive bias is the set of assumptions the learner makes regarding the input provided 
+to assume certain outcomes will happen without running any tests on them in a supervised
+machine learning environment
+
+Why do we use pruning?
+We use pruning to remove certain data, from various dataset sources, that causes the decision tree within the building of a model
+inside the machine learning environment, to overfit on the current data used. This allows the model to be versatile when making
+decsions from new incoming data and reduces the freqieuncy of the need to retrain the model.
+
+What is a validation set?
+A validation set is a set of data used to train artificial intelligence (AI) with the goal of finding and optimizing 
+the best model to solve a given problem. Validation sets are also known as dev sets. These tasks are normally completed 
+under supevised learning. 
+
+for a dataset, create a confusion matrix

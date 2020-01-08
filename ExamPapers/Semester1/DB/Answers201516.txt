@@ -1,0 +1,36 @@
+Q1
+A)
+i)
+Redundant Arrary of Independent Disk Drives , or RAID, is the technology that allows data to be stored in ways to prevent data loss. This is 
+through the share of disk drives when writing to and reading from database. 
+
+-i
+The RAID 3 configuration is a single level architecture byte striped across a min of three disks. Two are used for data while the third is used for parity 
+distrubition. As the result, the performance is high for large data, such as videos, and low for smaller data. As a result of the byte-striped data, about 
+one third of the data is used for memory allocation. This means the data efficiency is not optimised for the appliaction.  
+-ii
+The RAID 1+0 configuration is an indented architecture, with the data level striping happening at the first level, and mirroring and duplexing
+of the information happening at the second level. Four disks in total are needed for this method. This means the speed of the write operations
+is in the first level with the data storage duplication on the second level. While this means the main data is only consuming half of the 
+storage, the performance of the application is high.
+-iii
+The RAID 5 confriguration is a a single level architecture block level striping along with distributed parity on a min of three disks. These features 
+improve the performance of the application itself. Overall, RAID 5 is considered to be the most balanced of the raids designs. It does take about one third 
+of the allocated memory. 
+
+ii)
+Both Raid 3 and Raid Five cannot have mutiple write operation simultaneously due to the use of memory allocation with parity distribution. Naturally, the 
+system will have a lock operation on the necessary files until they are free of useage to prevent deadlock.
+
+B)
+Indexes can make an inner join faster by storing the same id and a pointer to all the values stored inside the index. This way, we can directly access the 
+values from the memory location rather then searching the database.
+
+No indexes can be applied to a application where the amount of users and cross details functionality are minor. Eg, A takeaway app designed for a small town
+composed of approx five restuarants. All the functionality encomposed is login, modify account details and order a takeaway.
+Singular index are used in a inner join when one side has huge amount of data that needs to be filtered. An example would be users attempting to borrow 
+books from library within a city. The amount of books on offer are huge in contrast to the userbase and thus would need a index.
+An Double index for inner join would be used when both sides of the join have potentially dense amount of data. An example would be people who have internet
+access to order items from different regions around the world from different sellers. All the numerous details of the customers would need to be stored, 
+as well as the bought items and the sellers.
+

@@ -1,0 +1,35 @@
+Q1
+A)
+Predictive analytics is the practice of extracting information from existing data sets in order to 
+determine patterns and predict future outcomes and trends.
+
+B)
+The difference between supervised algorithms and unsupervised learning algorithms is supervised methods usualy have
+a training set to determine the behaviour of its model regarding supervisoed where as unsupervised just has a few basic 
+rules and learns the result of the data using such rules by itself. 
+
+C)
+Cross-validation is a statistical technique for testing the performance of a Machine Learning model.
+
+Holdout cross validation is the simplest and most common. The data is split into two parts so they have mutually exclusive start and end points.
+One part is used for training the model while the other part is used for testing the model.
+
+K-Fold Cross Validation will split the dataset into K equally sized parts, which is used to train the model K times. For
+each training run, a single partition from the K parts is randomly designated as the test set and the rest is used for training.
+
+Leave One Out Cross Valiadation splits the data into k amount of folds. It then do iteratives training on k-1 on the model before using 
+the k step as the test. It does this in different increment steps for the different folds in increments in the training and testing model.
+
+D)
+The curse of dimensionality occurs when too many features are used to train the model in such that when used to analyise other set, it either 
+overfits or underfits. This can be dealt with through using key features that actually determine the model mainly combined with using decision
+tree models. 
+
+E)
+
+Inductive bias, in relative to the KNN algorithm, invovles looking at the plot and making assumptions, based off our visual guide, the nearest 
+neighbour in retrospect to each node before running tests on them.
+
+
+
+
