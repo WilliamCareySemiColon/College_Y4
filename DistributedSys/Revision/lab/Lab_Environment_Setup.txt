@@ -1,0 +1,7 @@
+You should create a .bat file
+
+(lab_env.bat) with this content:
+
+set PATH=C:\Program Files\Java\jdk1.8.0_172\bin
+set CLASSPATH=C:\Program Files\Java\jdk1.8.0_172\bin
+set CLASSPATH=%CLASSPATH%;.

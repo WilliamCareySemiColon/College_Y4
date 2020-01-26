@@ -1,7 +1,7 @@
 rich web: 32/40
 
-Mac learning: 83% @ 10% + 0/20
+Mac learning: 83% @ 10% = 8.3 + 63% @ 20% = 12.6 = 21% / 30%
 
-Database: 80% @ 20% = 16% + x @ 20%
+Database: 80% @ 20% = 16% + 70% x 20% = 14% = 30%
 
 Dis Systems: 50% @ 30% = 15%
