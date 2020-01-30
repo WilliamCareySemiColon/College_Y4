@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalouge>
+	<CD>
+		<year>1998</year>
+		<title>Sample</title>
+		<artist>MJ</artist>
+		<company>Hello World</company>
+		<price>1.23</price>
+	</CD>
+</catalouge>

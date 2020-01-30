@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<order>
+	<id></id>
+	<personName></personName>
+	<shipTo>
+		<name></name>
+		<addressLine></addressLine>
+		<city></city>
+		<country></country>
+	</shipTo>
+	<items>
+		<title></title>
+		<id></id>
+		<qunatity></qunatity>
+		<price></price>
+	</items>
+</order>
