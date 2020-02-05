@@ -17,5 +17,23 @@ sits_right_of(parvati,lavender).
 sits_right_of(katie,parvati).
 sits_right_of(natalie,katie).
 
+sits_left_of(natalie,ron).
+sits_left_of(ron,hermione).
+sits_left_of(hermione,harry).
+sits_left_of(harry,colin).
+sits_left_of(colin,seamus).
+sits_left_of(seamus,angelina).
+sits_left_of(angelina,ginny).
+sits_left_of(ginny,dean).
+sits_left_of(dean,dennis).
+sits_left_of(dennis,lee).
+sits_left_of(lee,george).
+sits_left_of(george,fred).
+sits_left_of(fred,alicia).
+sits_left_of(alicia,neville).
+sits_left_of(neville,lavender).
+sits_left_of(lavender,parvati).
+sits_left_of(parvati,katie).
+sits_left_of(katie,natalie).
 
-%%are_neighbors_of(X,Y,Z) :- sits_left_of(X,Z), sits_right_of(Y,Z).
+are_neighbors_of(X,Y,Z) :- sits_left_of(X,Z), sits_right_of(Y,Z).
