@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://brightspace.tudublin.ie/d2l/le/content/88420/viewContent/591806/View -->
+<html lang="en-gb" data-lang-default="en-gb" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[3]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;dd/MM/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-timezone="{&quot;name&quot;:&quot;Ireland - Dublin&quot;,&quot;identifier&quot;:&quot;Europe/Dublin&quot;}" data-app-version="20.20.1" dir="ltr" data-telemetry-endpoint="https://prd.telemetryservice.brightspace.com/api/events/" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#ffffff&quot;}"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091: 2019-20</title>
+		<script async="" src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/adrum-ext.js.download"></script><script>
+		//<![CDATA[
+			(function(){if('PerformanceLongTaskTiming' in window) {var g = window.__tti = {e:[]};g.o = new PerformanceObserver( function( l ){ g.e = g.e.concat( l.getEntries() ) });g.o.observe({ entryTypes:['longtask']})}})();
+			(function(){document.addEventListener('WebComponentsReady', function() { window.d2lWCRDispatched = true; if(window.D2L && window.D2L.WCRDispatched !== undefined) { window.D2L.WCRDispatched(); }});})();
+		//]]>
+		</script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/regenerator-runtime.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/babel-helpers.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/esm-amd-loader.min.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/webcomponents-loader.js.download"></script>
+		<script>
+		//<![CDATA[
+			(function(){try { localStorage.setItem('XSRF.Token','eAVRyaxNbBZc5JFVSj4djexZmPV0U2JQ');localStorage.setItem('Session.UserId','6730');} catch(e) {}})();
+			(function(){if(window['FontFace'] === undefined) { return; }new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-400.woff2) format("woff2"), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-400.woff) format("woff")',{style:'normal',weight:'400'}).load();new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-700.woff2) format("woff2"), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-700.woff) format("woff")',{style:'normal',weight:'700'}).load();})();
+			(function(){D2L = window.D2L || {};  D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
+D2L.LP.Web.UI.Flags = {
+    Flag: function(feature, defaultValue) {
+		const listedFlags ={"chrome-80-xhr-unload":true,"polymer-form-submit":true,"de36861-prevent-page-heading-title-injection":true,"de34809-chrome-75-frame-src-fix":true,"f-13154-remove-confirmations-start-submit-quiz":true};
+		return ( listedFlags[feature] !== undefined ) ? listedFlags[feature] : defaultValue;
+	}
+};})();
+		//]]>
+		</script>
+		<script>define2(['https://s.brightspace.com/lib/bsi/20.20.1-51/es6-bundled/web-components/bsi.js']);</script>
+		<link rel="icon" href="https://s.brightspace.com/lib/favicon/1.0.0/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/bsi.min.css">
+		<link rel="stylesheet" type="text/css" href="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/reset.css">
+		<link rel="stylesheet" type="text/css" href="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/D2L.LP.Web.Desktop.default.css">
+		<link rel="stylesheet" type="text/css" href="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/D2L.LE.Content.Web.Desktop.default.css">
+		<link rel="stylesheet" type="text/css" href="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/D2L.LE.ToolIntegration.Content.default.css">
+		<link rel="stylesheet" type="text/css" href="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/D2L.LP.Web.Desktop.Print.default.css" media="print">
+		<style>
+			html { font-size:20px; }
+			.d2l-branding-navigation-background-color {background-color: #FFFFFF;}
+			.d2l_1_10_587 {margin:10px;}
+			.d2l_1_12_232 {width:500px;}
+			.d2l_1_13_317 {background-position:left top;}
+			.d2l_1_14_924 {padding:1em;}
+			.d2l_1_15_358 {background-image:url('https://s.brightspace.com/lib/bsi/20.20.1-51/images/tier1/alert.svg');}
+			.d2l_1_16_492 {background-position:right top;}
+			.d2l_1_17_769 {padding-right:31px;}
+			.d2l_1_18_250 {min-height:18px;}
+			.d2l_1_19_64 {background-image:url('https://s.brightspace.com/lib/bsi/20.20.1-51/images/tier1/check.svg');}
+			.d2l_1_20_739 {padding:3.4em;}
+			.d2l_1_22_554 {table-layout: Inherit;}
+			.d2l_1_23_299 {vertical-align:baseline;}
+			.d2l_1_24_640 {width:100%;}
+			.d2l_1_26_768 {margin-top:0.5em;margin-bottom:10px;}
+			@media (max-width: 1000px) {.d2l_1_27_692 {display:none}}
+			.d2l_1_28_686 {table-layout: Fixed;}
+			.d2l_1_35_869 {margin:0 5px;}
+			.d2l_1_39_909 {margin-left:10px;}
+			.d2l_1_40_246 {margin-bottom:10px;}
+			.d2l_1_42_648 {height:580px;}
+			.d2l_1_43_831 {padding:20px 0 0 0;}
+			.d2l_1_44_570 {float:left;}
+			.d2l_1_45_937 {background-image:url('https://s.brightspace.com/lib/bsi/20.20.1-51/images/tier1/reflection.svg');background-position:0 0;background-repeat:no-repeat;width:18px;height:18px;background-size:18px 18px;}
+			.d2l_1_46_453 {float:right;}
+			.d2l_1_47_396 {padding:20px 0;}
+			.d2l_1_50_749 {padding:10px;}
+			.d2l_1_51_37 {border-right:1px solid #DDD;border-bottom:1px solid #DDD;border-left:1px solid #DDD;}
+			.d2l_1_52_365 {padding:0 0 10px 0;}
+			.d2l_1_53_990 {background-image:url('https://s.brightspace.com/lib/bsi/20.20.1-51/images/tier2/dot.svg');}
+			.d2l_1_54_736 {padding-left:37px;}
+			.d2l_1_55_500 {min-height:24px;}
+		</style>
+		<script>(function() {})();</script><style id="d2l-colors">html {
+  --d2l-color-regolith: #f9fbff;
+			--d2l-color-sylvite: #f1f5fb;
+			--d2l-color-gypsum: #e3e9f1;
+			--d2l-color-mica: #cdd5dc;
+			--d2l-color-corundum: #b5bdc2;
+			--d2l-color-chromite: #9ea5a9;
+			--d2l-color-galena: #868c8f;
+			--d2l-color-tungsten: #6e7376;
+			--d2l-color-ferrite: #494c4e;
+
+			
+			--d2l-color-zircon-plus-2: #bbf1fa;
+			--d2l-color-zircon-plus-1: #00bddd;
+			--d2l-color-zircon: #00849c;
+			--d2l-color-zircon-minus-1: #005b6b;
+
+			
+			--d2l-color-celestine-plus-2: #e8f2f9;
+			--d2l-color-celestine-plus-1: #29a6ff;
+			--d2l-color-celestine: #006fbf;
+			--d2l-color-celestine-minus-1: #005694;
+
+			
+			--d2l-color-amethyst-plus-2: #e9e6ff;
+			--d2l-color-amethyst-plus-1: #afa1ff;
+			--d2l-color-amethyst: #7862f0;
+			--d2l-color-amethyst-minus-1: #4c3f99;
+
+			
+			--d2l-color-fluorite-plus-2: #f6e1fa;
+			--d2l-color-fluorite-plus-1: #ea82ff;
+			--d2l-color-fluorite: #b24ac7;
+			--d2l-color-fluorite-minus-1: #7e358c;
+
+			
+			--d2l-color-tourmaline-plus-2: #fae1ed;
+			--d2l-color-tourmaline-plus-1: #ff389b;
+			--d2l-color-tourmaline: #bf2a75;
+			--d2l-color-tourmaline-minus-1: #96215c;
+
+			
+			--d2l-color-cinnabar-plus-2: #fae1e2;
+			--d2l-color-cinnabar-plus-1: #ff6b70;
+			--d2l-color-cinnabar: #cd2026;
+			--d2l-color-cinnabar-minus-1: #a1191d;
+
+			
+			--d2l-color-carnelian-plus-1: #fae3cf;
+			--d2l-color-carnelian: #e87511;
+			--d2l-color-carnelian-minus-1: #a6540d;
+			--d2l-color-carnelian-minus-2: #804008;
+
+			
+			--d2l-color-citrine-plus-1: #fae5c8;
+			--d2l-color-citrine: #ffba59;
+			--d2l-color-citrine-minus-1: #a87b3b;
+			--d2l-color-citrine-minus-2: #694b25;
+
+			
+			--d2l-color-topaz-plus-1: #fffbb2;
+			--d2l-color-topaz: #f5ec5a;
+			--d2l-color-topaz-minus-1: #a69f21;
+			--d2l-color-topaz-minus-2: #635f15;
+
+			
+			--d2l-color-peridot-plus-1: #cdf2b1;
+			--d2l-color-peridot: #8ccd5a;
+			--d2l-color-peridot-minus-1: #59823a;
+			--d2l-color-peridot-minus-2: #3d5926;
+
+			
+			--d2l-color-olivine-plus-1: #a5fabd;
+			--d2l-color-olivine: #46a661;
+			--d2l-color-olivine-minus-1: #327846;
+			--d2l-color-olivine-minus-2: #275c36;
+
+			
+			--d2l-color-malachite-plus-1: #a1f7f4;
+			--d2l-color-malachite: #00afaa;
+			--d2l-color-malachite-minus-1: #017d79;
+			--d2l-color-malachite-minus-2: #005e5b;
+
+			
+			--d2l-color-primary-accent-action: var(--d2l-color-celestine);
+			--d2l-color-primary-accent-indicator: var(--d2l-color-carnelian);
+
+			
+			--d2l-color-feedback-error: var(--d2l-color-cinnabar);
+			--d2l-color-feedback-warning: var(--d2l-color-citrine);
+			--d2l-color-feedback-success: var(--d2l-color-olivine);
+			--d2l-color-feedback-action: var(--d2l-color-celestine-plus-1);
+}
+
+</style><custom-style>
+	<style is="custom-style">html {
+  --d2l-color-white: #fff;
+			--d2l-color-woolonardo: var(--d2l-color-sylvite);
+			--d2l-color-titanius: var(--d2l-color-mica);
+			--d2l-color-pressicus: var(--d2l-color-corundum);
+			--d2l-color-violettine: var(--d2l-color-amethyst-minus-1);
+			--d2l-color-panthera: var(--d2l-color-tourmaline-plus-1);
+			--d2l-color-koolaudica: var(--d2l-color-peridot);
+			--d2l-color-deephonica: var(--d2l-color-malachite);
+			--d2l-color-lurite: var(--d2l-color-topaz);
+			--d2l-color-buttonic: linear-gradient(to bottom, var(--d2l-color-regolith) 0%, var(--d2l-color-gypsum) 100%);
+			--d2l-color-meglor: linear-gradient(to bottom, var(--d2l-color-corundum) 0%, var(--d2l-color-tungsten) 100%);
+			--d2l-color-trancition: linear-gradient(to bottom, #fff 0%, var(--d2l-color-regolith) 100%);
+			--d2l-color-trixon: linear-gradient(to bottom, var(--d2l-color-regolith) 0%, var(--d2l-color-sylvite) 100%);
+			--d2l-color-azurite: var(--d2l-color-zircon-plus-1);
+			--d2l-color-celestuba: var(--d2l-color-celestine-minus-1);
+			--d2l-color-gravah: var(--d2l-color-amethyst-minus-1);
+			--d2l-color-saphirella: var(--d2l-color-zircon-plus-1);
+			--d2l-color-chartronic: var(--d2l-color-topaz);
+			--d2l-color-celestine-light-1: var(--d2l-color-celestine-plus-2);
+			--d2l-color-celestine-light-2: var(--d2l-color-celestine-plus-1);
+			--d2l-color-olivine-light-1: var(--d2l-color-olivine-plus-1);
+			--d2l-color-olivine-light-2: var(--d2l-color-olivine);
+			--d2l-color-zircon-light-1: var(--d2l-color-zircon-plus-2);
+			--d2l-color-zircon-light-2: var(--d2l-color-zircon-plus-2);
+}
+
+</style>
+</custom-style><dom-module id="d2l-switch">
+	<template strip-whitespace=""></template>
+
+
+</dom-module>
+<custom-style>
+  <style is="custom-style">[hidden] {
+  display: none !important;
+}
+
+</style>
+</custom-style>
+<custom-style>
+  <style is="custom-style">html {
+  --layout_-_display:  flex;;
+
+      --layout-inline_-_display:  inline-flex;;
+
+      --layout-horizontal_-_display:  var(--layout_-_display); --layout-horizontal_-_-ms-flex-direction:  row; --layout-horizontal_-_-webkit-flex-direction:  row; --layout-horizontal_-_flex-direction:  row;;
+
+      --layout-horizontal-reverse_-_display:  var(--layout_-_display); --layout-horizontal-reverse_-_-ms-flex-direction:  row-reverse; --layout-horizontal-reverse_-_-webkit-flex-direction:  row-reverse; --layout-horizontal-reverse_-_flex-direction:  row-reverse;;
+
+      --layout-vertical_-_display:  var(--layout_-_display); --layout-vertical_-_-ms-flex-direction:  column; --layout-vertical_-_-webkit-flex-direction:  column; --layout-vertical_-_flex-direction:  column;;
+
+      --layout-vertical-reverse_-_display:  var(--layout_-_display); --layout-vertical-reverse_-_-ms-flex-direction:  column-reverse; --layout-vertical-reverse_-_-webkit-flex-direction:  column-reverse; --layout-vertical-reverse_-_flex-direction:  column-reverse;;
+
+      --layout-wrap_-_-ms-flex-wrap:  wrap; --layout-wrap_-_-webkit-flex-wrap:  wrap; --layout-wrap_-_flex-wrap:  wrap;;
+
+      --layout-wrap-reverse_-_-ms-flex-wrap:  wrap-reverse; --layout-wrap-reverse_-_-webkit-flex-wrap:  wrap-reverse; --layout-wrap-reverse_-_flex-wrap:  wrap-reverse;;
+
+      --layout-flex-auto_-_-ms-flex:  1 1 auto; --layout-flex-auto_-_-webkit-flex:  1 1 auto; --layout-flex-auto_-_flex:  1 1 auto;;
+
+      --layout-flex-none_-_-ms-flex:  none; --layout-flex-none_-_-webkit-flex:  none; --layout-flex-none_-_flex:  none;;
+
+      --layout-flex_-_-ms-flex:  1 1 0.000000001px; --layout-flex_-_-webkit-flex:  1; --layout-flex_-_flex:  1; --layout-flex_-_-webkit-flex-basis:  0.000000001px; --layout-flex_-_flex-basis:  0.000000001px;;
+
+      --layout-flex-2_-_-ms-flex:  2; --layout-flex-2_-_-webkit-flex:  2; --layout-flex-2_-_flex:  2;;
+
+      --layout-flex-3_-_-ms-flex:  3; --layout-flex-3_-_-webkit-flex:  3; --layout-flex-3_-_flex:  3;;
+
+      --layout-flex-4_-_-ms-flex:  4; --layout-flex-4_-_-webkit-flex:  4; --layout-flex-4_-_flex:  4;;
+
+      --layout-flex-5_-_-ms-flex:  5; --layout-flex-5_-_-webkit-flex:  5; --layout-flex-5_-_flex:  5;;
+
+      --layout-flex-6_-_-ms-flex:  6; --layout-flex-6_-_-webkit-flex:  6; --layout-flex-6_-_flex:  6;;
+
+      --layout-flex-7_-_-ms-flex:  7; --layout-flex-7_-_-webkit-flex:  7; --layout-flex-7_-_flex:  7;;
+
+      --layout-flex-8_-_-ms-flex:  8; --layout-flex-8_-_-webkit-flex:  8; --layout-flex-8_-_flex:  8;;
+
+      --layout-flex-9_-_-ms-flex:  9; --layout-flex-9_-_-webkit-flex:  9; --layout-flex-9_-_flex:  9;;
+
+      --layout-flex-10_-_-ms-flex:  10; --layout-flex-10_-_-webkit-flex:  10; --layout-flex-10_-_flex:  10;;
+
+      --layout-flex-11_-_-ms-flex:  11; --layout-flex-11_-_-webkit-flex:  11; --layout-flex-11_-_flex:  11;;
+
+      --layout-flex-12_-_-ms-flex:  12; --layout-flex-12_-_-webkit-flex:  12; --layout-flex-12_-_flex:  12;;
+
+      
+
+      --layout-start_-_-ms-flex-align:  start; --layout-start_-_-webkit-align-items:  flex-start; --layout-start_-_align-items:  flex-start;;
+
+      --layout-center_-_-ms-flex-align:  center; --layout-center_-_-webkit-align-items:  center; --layout-center_-_align-items:  center;;
+
+      --layout-end_-_-ms-flex-align:  end; --layout-end_-_-webkit-align-items:  flex-end; --layout-end_-_align-items:  flex-end;;
+
+      --layout-baseline_-_-ms-flex-align:  baseline; --layout-baseline_-_-webkit-align-items:  baseline; --layout-baseline_-_align-items:  baseline;;
+
+      
+
+      --layout-start-justified_-_-ms-flex-pack:  start; --layout-start-justified_-_-webkit-justify-content:  flex-start; --layout-start-justified_-_justify-content:  flex-start;;
+
+      --layout-center-justified_-_-ms-flex-pack:  center; --layout-center-justified_-_-webkit-justify-content:  center; --layout-center-justified_-_justify-content:  center;;
+
+      --layout-end-justified_-_-ms-flex-pack:  end; --layout-end-justified_-_-webkit-justify-content:  flex-end; --layout-end-justified_-_justify-content:  flex-end;;
+
+      --layout-around-justified_-_-ms-flex-pack:  distribute; --layout-around-justified_-_-webkit-justify-content:  space-around; --layout-around-justified_-_justify-content:  space-around;;
+
+      --layout-justified_-_-ms-flex-pack:  justify; --layout-justified_-_-webkit-justify-content:  space-between; --layout-justified_-_justify-content:  space-between;;
+
+      --layout-center-center_-_-ms-flex-align:  var(--layout-center_-_-ms-flex-align); --layout-center-center_-_-webkit-align-items:  var(--layout-center_-_-webkit-align-items); --layout-center-center_-_align-items:  var(--layout-center_-_align-items); --layout-center-center_-_-ms-flex-pack:  var(--layout-center-justified_-_-ms-flex-pack); --layout-center-center_-_-webkit-justify-content:  var(--layout-center-justified_-_-webkit-justify-content); --layout-center-center_-_justify-content:  var(--layout-center-justified_-_justify-content);;
+
+      
+
+      --layout-self-start_-_-ms-align-self:  flex-start; --layout-self-start_-_-webkit-align-self:  flex-start; --layout-self-start_-_align-self:  flex-start;;
+
+      --layout-self-center_-_-ms-align-self:  center; --layout-self-center_-_-webkit-align-self:  center; --layout-self-center_-_align-self:  center;;
+
+      --layout-self-end_-_-ms-align-self:  flex-end; --layout-self-end_-_-webkit-align-self:  flex-end; --layout-self-end_-_align-self:  flex-end;;
+
+      --layout-self-stretch_-_-ms-align-self:  stretch; --layout-self-stretch_-_-webkit-align-self:  stretch; --layout-self-stretch_-_align-self:  stretch;;
+
+      --layout-self-baseline_-_-ms-align-self:  baseline; --layout-self-baseline_-_-webkit-align-self:  baseline; --layout-self-baseline_-_align-self:  baseline;;
+
+      
+
+      --layout-start-aligned_-_-ms-flex-line-pack:  start; --layout-start-aligned_-_-ms-align-content:  flex-start; --layout-start-aligned_-_-webkit-align-content:  flex-start; --layout-start-aligned_-_align-content:  flex-start;;
+
+      --layout-end-aligned_-_-ms-flex-line-pack:  end; --layout-end-aligned_-_-ms-align-content:  flex-end; --layout-end-aligned_-_-webkit-align-content:  flex-end; --layout-end-aligned_-_align-content:  flex-end;;
+
+      --layout-center-aligned_-_-ms-flex-line-pack:  center; --layout-center-aligned_-_-ms-align-content:  center; --layout-center-aligned_-_-webkit-align-content:  center; --layout-center-aligned_-_align-content:  center;;
+
+      --layout-between-aligned_-_-ms-flex-line-pack:  justify; --layout-between-aligned_-_-ms-align-content:  space-between; --layout-between-aligned_-_-webkit-align-content:  space-between; --layout-between-aligned_-_align-content:  space-between;;
+
+      --layout-around-aligned_-_-ms-flex-line-pack:  distribute; --layout-around-aligned_-_-ms-align-content:  space-around; --layout-around-aligned_-_-webkit-align-content:  space-around; --layout-around-aligned_-_align-content:  space-around;;
+
+      
+
+      --layout-block_-_display:  block;;
+
+      --layout-invisible_-_visibility:  hidden !important;;
+
+      --layout-relative_-_position:  relative;;
+
+      --layout-fit_-_position:  absolute; --layout-fit_-_top:  0; --layout-fit_-_right:  0; --layout-fit_-_bottom:  0; --layout-fit_-_left:  0;;
+
+      --layout-scroll_-_-webkit-overflow-scrolling:  touch; --layout-scroll_-_overflow:  auto;;
+
+      --layout-fullbleed_-_margin:  0; --layout-fullbleed_-_height:  100vh;;
+
+      
+
+      --layout-fixed-top_-_position:  fixed; --layout-fixed-top_-_top:  0; --layout-fixed-top_-_left:  0; --layout-fixed-top_-_right:  0;;
+
+      --layout-fixed-right_-_position:  fixed; --layout-fixed-right_-_top:  0; --layout-fixed-right_-_right:  0; --layout-fixed-right_-_bottom:  0;;
+
+      --layout-fixed-bottom_-_position:  fixed; --layout-fixed-bottom_-_right:  0; --layout-fixed-bottom_-_bottom:  0; --layout-fixed-bottom_-_left:  0;;
+
+      --layout-fixed-left_-_position:  fixed; --layout-fixed-left_-_top:  0; --layout-fixed-left_-_bottom:  0; --layout-fixed-left_-_left:  0;;
+}
+
+</style>
+</custom-style><style>[hidden] { display: none !important; }</style><custom-style>
+  <style>html {
+  --lumo-base-color: #FFF;
+
+      
+      --lumo-tint-5pct: hsla(0, 0%, 100%, 0.3);
+      --lumo-tint-10pct: hsla(0, 0%, 100%, 0.37);
+      --lumo-tint-20pct: hsla(0, 0%, 100%, 0.44);
+      --lumo-tint-30pct: hsla(0, 0%, 100%, 0.5);
+      --lumo-tint-40pct: hsla(0, 0%, 100%, 0.57);
+      --lumo-tint-50pct: hsla(0, 0%, 100%, 0.64);
+      --lumo-tint-60pct: hsla(0, 0%, 100%, 0.7);
+      --lumo-tint-70pct: hsla(0, 0%, 100%, 0.77);
+      --lumo-tint-80pct: hsla(0, 0%, 100%, 0.84);
+      --lumo-tint-90pct: hsla(0, 0%, 100%, 0.9);
+      --lumo-tint: #FFF;
+
+      
+      --lumo-shade-5pct: hsla(214, 61%, 25%, 0.05);
+      --lumo-shade-10pct: hsla(214, 57%, 24%, 0.1);
+      --lumo-shade-20pct: hsla(214, 53%, 23%, 0.16);
+      --lumo-shade-30pct: hsla(214, 50%, 22%, 0.26);
+      --lumo-shade-40pct: hsla(214, 47%, 21%, 0.38);
+      --lumo-shade-50pct: hsla(214, 45%, 20%, 0.5);
+      --lumo-shade-60pct: hsla(214, 43%, 19%, 0.61);
+      --lumo-shade-70pct: hsla(214, 42%, 18%, 0.72);
+      --lumo-shade-80pct: hsla(214, 41%, 17%, 0.83);
+      --lumo-shade-90pct: hsla(214, 40%, 16%, 0.94);
+      --lumo-shade: hsl(214, 35%, 15%);
+
+      
+      --lumo-contrast-5pct: var(--lumo-shade-5pct);
+      --lumo-contrast-10pct: var(--lumo-shade-10pct);
+      --lumo-contrast-20pct: var(--lumo-shade-20pct);
+      --lumo-contrast-30pct: var(--lumo-shade-30pct);
+      --lumo-contrast-40pct: var(--lumo-shade-40pct);
+      --lumo-contrast-50pct: var(--lumo-shade-50pct);
+      --lumo-contrast-60pct: var(--lumo-shade-60pct);
+      --lumo-contrast-70pct: var(--lumo-shade-70pct);
+      --lumo-contrast-80pct: var(--lumo-shade-80pct);
+      --lumo-contrast-90pct: var(--lumo-shade-90pct);
+      --lumo-contrast: var(--lumo-shade);
+
+      
+      --lumo-header-text-color: var(--lumo-contrast);
+      --lumo-body-text-color: var(--lumo-contrast-90pct);
+      --lumo-secondary-text-color: var(--lumo-contrast-70pct);
+      --lumo-tertiary-text-color: var(--lumo-contrast-50pct);
+      --lumo-disabled-text-color: var(--lumo-contrast-30pct);
+
+      
+      --lumo-primary-color: hsl(214, 90%, 52%);
+      --lumo-primary-color-50pct: hsla(214, 90%, 52%, 0.5);
+      --lumo-primary-color-10pct: hsla(214, 90%, 52%, 0.1);
+      --lumo-primary-text-color: var(--lumo-primary-color);
+      --lumo-primary-contrast-color: #FFF;
+
+      
+      --lumo-error-color: hsl(3, 100%, 61%);
+      --lumo-error-color-50pct: hsla(3, 100%, 60%, 0.5);
+      --lumo-error-color-10pct: hsla(3, 100%, 60%, 0.1);
+      --lumo-error-text-color: hsl(3, 92%, 53%);
+      --lumo-error-contrast-color: #FFF;
+
+      
+      --lumo-success-color: hsl(145, 80%, 42%); 
+      --lumo-success-color-50pct: hsla(145, 76%, 44%, 0.55);
+      --lumo-success-color-10pct: hsla(145, 76%, 44%, 0.12);
+      --lumo-success-text-color: hsl(145, 100%, 32%);
+      --lumo-success-contrast-color: #FFF;
+}
+
+</style>
+</custom-style><dom-module id="lumo-color">
+  <template></template>
+</dom-module><dom-module id="lumo-color-legacy">
+  <template></template>
+</dom-module><custom-style>
+  <style>html {
+  --lumo-size-xs: 1.625rem;
+      --lumo-size-s: 1.875rem;
+      --lumo-size-m: 2.25rem;
+      --lumo-size-l: 2.75rem;
+      --lumo-size-xl: 3.5rem;
+
+      
+      --lumo-icon-size-s: 1.25em;
+      --lumo-icon-size-m: 1.5em;
+      --lumo-icon-size-l: 2.25em;
+      
+      --lumo-icon-size: var(--lumo-icon-size-m);
+}
+
+</style>
+</custom-style><custom-style>
+  <style>html {
+  --lumo-space-xs: 0.25rem;
+      --lumo-space-s: 0.5rem;
+      --lumo-space-m: 1rem;
+      --lumo-space-l: 1.5rem;
+      --lumo-space-xl: 2.5rem;
+
+      
+      --lumo-space-wide-xs: calc(var(--lumo-space-xs) / 2) var(--lumo-space-xs);
+      --lumo-space-wide-s: calc(var(--lumo-space-s) / 2) var(--lumo-space-s);
+      --lumo-space-wide-m: calc(var(--lumo-space-m) / 2) var(--lumo-space-m);
+      --lumo-space-wide-l: calc(var(--lumo-space-l) / 2) var(--lumo-space-l);
+      --lumo-space-wide-xl: calc(var(--lumo-space-xl) / 2) var(--lumo-space-xl);
+
+      
+      --lumo-space-tall-xs: var(--lumo-space-xs) calc(var(--lumo-space-xs) / 2);
+      --lumo-space-tall-s: var(--lumo-space-s) calc(var(--lumo-space-s) / 2);
+      --lumo-space-tall-m: var(--lumo-space-m) calc(var(--lumo-space-m) / 2);
+      --lumo-space-tall-l: var(--lumo-space-l) calc(var(--lumo-space-l) / 2);
+      --lumo-space-tall-xl: var(--lumo-space-xl) calc(var(--lumo-space-xl) / 2);
+}
+
+</style>
+</custom-style><custom-style>
+  <style>html {
+  --lumo-border-radius-s: 0.25em; 
+      --lumo-border-radius-m: var(--lumo-border-radius, 0.25em); 
+      --lumo-border-radius-l: 0.5em; 
+      --lumo-border-radius: 0.25em; 
+
+      
+      --lumo-box-shadow-xs: 0 1px 4px -1px var(--lumo-shade-50pct);
+      --lumo-box-shadow-s: 0 2px 4px -1px var(--lumo-shade-20pct), 0 3px 12px -1px var(--lumo-shade-30pct);
+      --lumo-box-shadow-m: 0 2px 6px -1px var(--lumo-shade-20pct), 0 8px 24px -4px var(--lumo-shade-40pct);
+      --lumo-box-shadow-l: 0 3px 18px -2px var(--lumo-shade-20pct), 0 12px 48px -6px var(--lumo-shade-40pct);
+      --lumo-box-shadow-xl: 0 4px 24px -3px var(--lumo-shade-20pct), 0 18px 64px -8px var(--lumo-shade-40pct);
+
+      
+      --lumo-clickable-cursor: default;
+}
+
+</style>
+</custom-style><custom-style>
+  <style>html {
+  --lumo-font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+      
+      --lumo-font-size-xxs: .75rem;
+      --lumo-font-size-xs: .8125rem;
+      --lumo-font-size-s: .875rem;
+      --lumo-font-size-m: 1rem;
+      --lumo-font-size-l: 1.125rem;
+      --lumo-font-size-xl: 1.375rem;
+      --lumo-font-size-xxl: 1.75rem;
+      --lumo-font-size-xxxl: 2.5rem;
+
+      
+      --lumo-line-height-xs: 1.25;
+      --lumo-line-height-s: 1.375;
+      --lumo-line-height-m: 1.625;
+}
+
+</style>
+</custom-style><dom-module id="lumo-typography">
+  <template></template>
+</dom-module><dom-module id="lumo-button" theme-for="vaadin-button">
+  <template></template>
+</dom-module><dom-module id="vaadin-date-picker-overlay-styles" theme-for="vaadin-date-picker-overlay">
+  <template></template>
+</dom-module><dom-module id="lumo-overlay">
+  <template></template>
+</dom-module><dom-module id="lumo-menu-overlay-core">
+  <template></template>
+</dom-module><dom-module id="lumo-menu-overlay">
+  <template></template>
+</dom-module><dom-module id="lumo-date-picker-overlay" theme-for="vaadin-date-picker-overlay">
+  <template></template>
+</dom-module><dom-module id="lumo-date-picker-overlay-content" theme-for="vaadin-date-picker-overlay-content">
+  <template></template>
+</dom-module><dom-module id="lumo-month-calendar" theme-for="vaadin-month-calendar">
+  <template></template>
+</dom-module><custom-style>
+  <style>@keyframes vaadin-date-picker-month-calendar-focus-date {
+50% {
+  box-shadow: 0 0 0 2px transparent;
+}
+
+}
+
+</style>
+</custom-style><dom-module id="d2l-accordion-collapse">
+	<template strip-whitespace=""></template>
+</dom-module><dom-module id="d2l-accordion">
+	<template strip-whitespace=""></template>
+
+
+</dom-module><custom-style>
+	<style is="custom-style">html {
+  --d2l-body-standard-text_-_font-size:  0.95rem; --d2l-body-standard-text_-_font-weight:  400; --d2l-body-standard-text_-_line-height:  1.4rem;;
+
+			--d2l-body-compact-text_-_font-size:  0.8rem; --d2l-body-compact-text_-_font-weight:  400; --d2l-body-compact-text_-_line-height:  1.2rem;;
+
+			--d2l-body-small-text_-_color:  var(--d2l-color-tungsten); --d2l-body-small-text_-_font-size:  0.7rem; --d2l-body-small-text_-_font-weight:  400; --d2l-body-small-text_-_line-height:  1rem; --d2l-body-small-text_-_margin:  auto;;
+
+			--d2l-heading-1_-_font-size:  2rem; --d2l-heading-1_-_font-weight:  400; --d2l-heading-1_-_line-height:  2.4rem; --d2l-heading-1_-_margin:  1.5rem 0 1.5rem 0;;
+
+			--d2l-heading-2_-_font-size:  1.5rem; --d2l-heading-2_-_font-weight:  400; --d2l-heading-2_-_line-height:  1.8rem; --d2l-heading-2_-_margin:  1.5rem 0 1.5rem 0;;
+
+			--d2l-heading-3_-_font-size:  1rem; --d2l-heading-3_-_font-weight:  700; --d2l-heading-3_-_line-height:  1.5rem; --d2l-heading-3_-_margin:  1.5rem 0 1.5rem 0;;
+
+			--d2l-heading-4_-_font-size:  0.8rem; --d2l-heading-4_-_font-weight:  700; --d2l-heading-4_-_line-height:  1.2rem; --d2l-heading-4_-_margin:  1.5rem 0 1.5rem 0;;
+
+			--d2l-label-text_-_font-size:  0.7rem; --d2l-label-text_-_line-height:  1rem; --d2l-label-text_-_font-weight:  700; --d2l-label-text_-_letter-spacing:  0.2px;;
+}
+
+</style>
+</custom-style><dom-module id="d2l-tooltip">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-multi-select-list-item">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-multi-select-list">
+	<template strip-whitespace=""></template>
+</dom-module><custom-style>
+	<style is="custom-style">html {
+  --d2l-alert-critical-color: var(--d2l-color-cinnabar);
+			--d2l-alert-warning-color: var(--d2l-color-citrine);
+			--d2l-alert-default-color: var(--d2l-color-celestine-plus-1);
+			--d2l-alert-success-color: var(--d2l-color-olivine);
+}
+
+</style>
+</custom-style><dom-module id="d2l-alert">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="siren-entity-loading">
+	<template strip-whitespace=""></template>
+
+	
+</dom-module><dom-module id="s-html">
+<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-outcome">
+	<template strip-whitespace=""></template>
+
+
+</dom-module><dom-module id="d2l-alignment-intent">
+	<template strip-whitespace=""></template>
+
+
+</dom-module><dom-module id="d2l-alignment-update">
+	<template strip-whitespace=""></template>
+
+
+</dom-module><dom-module id="d2l-select-outcomes">
+	<template strip-whitespace=""></template>
+
+
+</dom-module><dom-module id="d2l-alert-toast">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-card-content-meta">
+
+	<template strip-whitespace=""></template>
+
+
+
+</dom-module><dom-module id="d2l-offscreen-shared-styles">
+	<template></template>
+</dom-module><dom-module id="d2l-card-footer-link">
+
+	<template strip-whitespace=""></template>
+
+
+
+</dom-module><dom-module id="d2l-card">
+
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-course-image">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-vaadin-overlay-content-styles" theme-for="vaadin-date-picker-overlay vaadin-date-picker-overlay-content">
+	<template></template>
+</dom-module><dom-module id="d2l-vaadin-month-calendar-styles" theme-for="vaadin-month-calendar">
+	<template></template>
+</dom-module><dom-module id="d2l-vaadin-button-styles" theme-for="vaadin-button">
+	<template></template>
+</dom-module><dom-module id="d2l-input-styles">
+	<template></template>
+</dom-module><dom-module id="d2l-dropdown-opener-styles">
+	<template></template>
+</dom-module><dom-module id="d2l-dropdown">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-dropdown-content-styles">
+	<template></template>
+</dom-module><dom-module id="d2l-dropdown-content">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-time-picker">
+	<template strip-whitespace=""></template>
+
+
+</dom-module><dom-module id="d2l-datetime-picker">
+	<template strip-whitespace=""></template>
+</dom-module><dom-module id="d2l-dropdown-button-subtle">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-hierarchical-view-styles">
+	<template strip-whitespace=""></template>
+</dom-module><dom-module id="d2l-menu-item-styles">
+	<template></template>
+</dom-module><dom-module id="d2l-menu-item">
+
+	<template strip-whitespace=""></template>
+
+	
+
+</dom-module><dom-module id="d2l-menu-item-return">
+
+	<template strip-whitespace=""></template>
+
+	
+
+</dom-module><dom-module id="d2l-menu-item-separator">
+
+	<template strip-whitespace=""></template>
+
+
+
+</dom-module><dom-module id="d2l-menu">
+
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-dropdown-menu">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-visible-on-ancestor-styles">
+	<template></template>
+</dom-module><dom-module id="d2l-dropdown-more">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-menu-item-link">
+
+	<template strip-whitespace=""></template>
+
+	
+
+</dom-module><dom-module id="d2l-status-indicator">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-insertstuff-styles">
+  <template></template>
+</dom-module><dom-module id="d2l-placeholder-styles">
+  <template></template>
+</dom-module><dom-module id="d2l-html-editor">
+
+	<template strip-whitespace=""></template>
+
+
+</dom-module><dom-module id="d2l-search-widget">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-image-selector-tile-styles">
+	<template strip-whitespace=""></template>
+</dom-module><dom-module id="d2l-image-selector-tile">
+	<template strip-whitespace=""></template>
+
+
+</dom-module><dom-module id="d2l-image-tile-grid">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-basic-image-selector">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-input-textarea">
+	<template strip-whitespace=""></template>
+</dom-module><dom-module id="d2l-menu-item-selectable-styles">
+	<template></template>
+</dom-module><dom-module id="d2l-menu-item-radio">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-squishy-button-selector">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-squishy-button">
+<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-outcomes-level-of-achievements">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-rubric-feedback">
+	<template strip-whitespace=""></template>
+</dom-module><dom-module id="d2l-rubric-loading">
+	<template strip-whitespace=""></template>
+
+	
+</dom-module><dom-module id="d2l-save-status">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-simple-overlay-close-button">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-simple-overlay-styles">
+	<template strip-whitespace=""></template>
+</dom-module><dom-module id="d2l-simple-overlay">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-sticky-element">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-table-circle-button">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-scroll-wrapper">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-table-col-sort">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-table-col-sort-button">
+	<template strip-whitespace=""></template>
+	
+</dom-module><custom-style>
+	<style is="custom-style">html {
+  --d2l-table-border-color: var(--d2l-color-mica);
+			--d2l-table-border: 1px solid var(--d2l-table-border-color);
+			--d2l-table-border-radius: 0.3rem;
+			--d2l-table-header-background-color: var(--d2l-color-regolith);
+
+			--d2l-table-light-border-color: var(--d2l-color-gypsum);
+			--d2l-table-light-border: 1px solid var(--d2l-table-light-border-color);
+			--d2l-table-light-header-background-color: #fff;
+
+			--d2l-table-body-background-color: #fff;
+			--d2l-table-row-background-color-active: var(--d2l-color-celestine-plus-2);
+			--d2l-table-row-border-color-active-selected: var(--d2l-color-celestine-plus-1);
+			--d2l-table-row-background-color-active-selected: #EBF5FC;
+			--d2l-table-row-border-color-selected: var(--d2l-color-celestine-plus-1);
+			--d2l-table-row-background-color-selected: var(--d2l-color-celestine-plus-2);
+
+			--d2l-table-cell_-_display: table-cell; --d2l-table-cell_-_vertical-align: middle; --d2l-table-cell_-_padding:  0.5rem 1rem; --d2l-table-cell_-_height:  41px;
+			--d2l-table-light-cell_-_display:  table-cell; --d2l-table-light-cell_-_vertical-align:  middle; --d2l-table-light-cell_-_padding:  0.6rem; --d2l-table-light-cell_-_height:  1.15rem;
+
+			--d2l-table-header_-_color: var(--d2l-color-ferrite); --d2l-table-header_-_font-size: .7rem; --d2l-table-header_-_line-height: 1rem; --d2l-table-header_-_margin: 1rem 0; --d2l-table-header_-_padding:  0.5rem 1rem; --d2l-table-header_-_height:  27px;
+			--d2l-table-light-header_-_color:  var(--d2l-color-ferrite); --d2l-table-light-header_-_font-size:  0.7rem; --d2l-table-light-header_-_font-weight:  normal; --d2l-table-light-header_-_line-height:  1rem; --d2l-table-light-header_-_padding:  0.6rem; --d2l-table-light-header_-_height:  1.15rem;
+
+			--d2l-table_-_background-color: transparent; --d2l-table_-_border-collapse: separate!important; --d2l-table_-_border-spacing: 0; --d2l-table_-_display: table; --d2l-table_-_font-size:  0.8rem; --d2l-table_-_font-weight:  400; --d2l-table_-_width: 100%;
+			--d2l-table-head_-_display: table-header-group;
+			--d2l-table-foot_-_display: table-footer-group;
+			--d2l-table-body_-_display:  table-row-group;
+			--d2l-table-row_-_display: table-row;
+}
+
+</style>
+</custom-style><dom-module id="d2l-table-style">
+	<template></template>
+</dom-module><dom-module id="d2l-table-wrapper">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-tbody">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-td">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-tfoot">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-th">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-thead">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-tr">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-tspan">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-table">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-tab-panel-styles">
+	<template></template>
+</dom-module><dom-module id="d2l-tab-panel">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-tab">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-tabs">
+	<template strip-whitespace=""></template>
+
+</dom-module><style id="d2l-typography-font-face">
+	@font-face {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Lato Regular'), local('Lato-Regular'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-400.woff2) format('woff2'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-400.woff) format('woff'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-400.ttf) format('truetype');
+	}
+	@font-face {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 700;
+		src: local('Lato Bold'), local('Lato-Bold'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-700.woff2) format('woff2'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-700.woff) format('woff'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-700.ttf) format('truetype');
+	}
+	@font-face {
+		font-family: 'Open Dyslexic';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Open Dyslexic Regular'), local('OpenDyslexic-Regular'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/OpenDyslexic.woff) format('woff'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/OpenDyslexic.ttf) format('truetype');
+	}
+	@font-face {
+		font-family: 'Open Dyslexic';
+		font-style: italic;
+		font-weight: 400;
+		src: local('Open Dyslexic Italic'), local('OpenDyslexic-Italic'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/OpenDyslexic-Italic.woff) format('woff'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/OpenDyslexic-Italic.ttf) format('truetype');
+	}
+	@font-face {
+		font-family: 'Open Dyslexic';
+		font-style: normal;
+		font-weight: 700;
+		src: local('Open Dyslexic Bold'), local('OpenDyslexic-Bold'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/OpenDyslexic-700.woff) format('woff'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/OpenDyslexic-700.ttf) format('truetype');
+	}
+	@font-face {
+		font-family: 'Open Dyslexic';
+		font-style: italic;
+		font-weight: 700;
+		src: local('Open Dyslexic Bold Italic'), local('OpenDyslexic-BoldItalic'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/OpenDyslexic-700-Italic.woff) format('woff'), url(https://s.brightspace.com/lib/fonts/0.5.0/assets/OpenDyslexic-700-Italic.ttf) format('truetype');
+	}</style><dom-module id="d2l-typography">
+	<template></template>
+</dom-module><dom-module id="d2l-profile-image-shared-styles">
+	<template strip-whitespace=""></template>
+</dom-module><dom-module id="d2l-profile-image-base">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-profile-image">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-button-group-styles">
+	<template></template>
+</dom-module><dom-module id="d2l-action-button-group">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-button-group">
+	<template strip-whitespace=""></template>
+	
+</dom-module><dom-module id="d2l-dropdown-button">
+	<template strip-whitespace=""></template>
+
+</dom-module><dom-module id="d2l-dropdown-context-menu">
+	<template strip-whitespace=""></template>
+
+</dom-module></head>
+	<body class="d2l-body d2l-typography vui-typography daylight">
+		<custom-style><style>html {
+  --d2l-branding-primary-color: #ffffff;
+}
+
+</style></custom-style>
+		<header><button class="d2l-skipnav" id="d2l_skipnav">skip to main content</button>
+		<nav class="d2l-navigation-s d2l-branding-navigation-dark-foreground-color d2l-navigation-s-linkarea-no-color"><d2l-navigation><d2l-navigation-main-header><div class="d2l-navigation-header-left" slot="left"><div class="d2l-navigation-s-header-open-button-wrapper"><d2l-navigation-button-notification-icon icon="tier3:menu-hamburger" text="menu" type="button"></d2l-navigation-button-notification-icon></div><div class="d2l-navigation-s-header-logo-area d2l-navigation-s-header-no-home-icon"><d2l-navigation-separator class="d2l-navigation-s-logo-divider"></d2l-navigation-separator><div class="d2l-navigation-s-logo"><d2l-navigation-link-image src="/d2l/lp/navbars/6606/theme/viewimage/21692/view?v=20.20.1.19936-31" text="My Home" href="/d2l/lp/ouHome/defaultHome.d2l" slim=""></d2l-navigation-link-image></div><d2l-navigation-separator class="d2l-navigation-s-title-divider"></d2l-navigation-separator><div class="d2l-navigation-s-title-container"><a class="d2l-navigation-s-link" href="https://brightspace.tudublin.ie/d2l/home/88420" title="Visualising Data CMPU4091: 2019-20">Visualising Data CMPU4091: 2019-20</a></div></div></div><div class="d2l-navigation-header-right" slot="right"><div class="d2l-navigation-s-course-menu"><d2l-dropdown no-auto-open=""><d2l-navigation-button-notification-icon class="d2l-dropdown-opener" icon="tier3:classes" text="Select a module..." data-prl="/d2l/lp/courseSelector/88420/InitPartial" data-prid="d2l_1_7_237" type="button" aria-haspopup="true" aria-expanded="false"></d2l-navigation-button-notification-icon><d2l-dropdown-content max-width="800" min-width="450" no-padding="" vertical-offset="0" d2l-dropdown-content="" dir="ltr" style="--d2l-dropdown-verticaloffset:0px;"><div id="d2l_1_7_237" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+		</div>
+		</d2l-dropdown-content></d2l-dropdown></div><d2l-navigation-separator class="d2l-navigation-s-course-menu-divider"></d2l-navigation-separator><div class="d2l-navigation-s-notifications"><div class="d2l-navigation-s-notifications-wrapper"><div class="d2l-navigation-s-notification" data-category="alerts" data-aria-message="You have new Subscriptions"><d2l-dropdown no-auto-open=""><d2l-navigation-button-notification-icon class="d2l-dropdown-opener" icon="tier3:discussions" text="Subscription alerts" data-prl="/d2l/MiniBar/88420/ActivityFeed/GetAlertsDaylight?Category=0" data-prid="d2l_1_8_227" type="button" aria-haspopup="true" aria-expanded="false"></d2l-navigation-button-notification-icon><d2l-dropdown-content no-padding="" vertical-offset="0" d2l-dropdown-content="" dir="ltr" style="--d2l-dropdown-verticaloffset:0px;"><div id="d2l_1_8_227" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+		</div>
+		</d2l-dropdown-content></d2l-dropdown></div><div class="d2l-navigation-s-notification" data-category="grades" data-aria-message="You have new Updates"><d2l-dropdown no-auto-open=""><d2l-navigation-button-notification-icon class="d2l-dropdown-opener" icon="tier3:notification-bell" text="Update alerts" data-prl="/d2l/MiniBar/88420/ActivityFeed/GetAlertsDaylight?Category=1" data-prid="d2l_1_9_978" type="button" aria-haspopup="true" aria-expanded="false"></d2l-navigation-button-notification-icon><d2l-dropdown-content no-padding="" vertical-offset="0" d2l-dropdown-content="" dir="ltr" style="--d2l-dropdown-verticaloffset:0px;"><div id="d2l_1_9_978" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+		</div>
+		</d2l-dropdown-content></d2l-dropdown></div></div><div class="d2l-navigation-s-notifications-div"></div></div><d2l-navigation-separator class="d2l-navigation-s-notifications-divider"></d2l-navigation-separator><div class="d2l-navigation-s-personal-menu"><d2l-dropdown><d2l-navigation-button class="d2l-dropdown-opener" type="button" dir="ltr" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-s-personal-menu-wrapper"><d2l-profile-image-base class="d2l-token-receiver" data-token-receiver-scope="core:*:*" href="" first-name="William" last-name="Carey" colour-id="6730" medium="" style="--initials-background-color:#3B4148;"></d2l-profile-image-base><span class="d2l-navigation-s-personal-menu-text">William Carey</span></span></d2l-navigation-button><d2l-dropdown-content min-width="300" no-padding="" vertical-offset="0" render-content="render-content" d2l-dropdown-content="" dir="ltr" style="--d2l-dropdown-verticaloffset:0px;"><div>
+			<ul class="d2l-list">
+				<li>
+					<ul style="list-style:none;margin:10px;padding:0;">
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="https://brightspace.tudublin.ie/d2l/lp/profile/profile_edit.d2l?ou=88420" onclick="D2L.O(&quot;__g1&quot;,0)();">Profile</a>
+							</span></li>
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="https://brightspace.tudublin.ie/d2l/Notifications/Settings?ou=88420" onclick="D2L.O(&quot;__g1&quot;,1)();">Notifications</a>
+							</span></li>
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="https://brightspace.tudublin.ie/d2l/lp/preferences/preferences_main/preferences_main.d2l?ou=88420" onclick="D2L.O(&quot;__g1&quot;,2)();">Account Settings</a>
+							</span></li>
+					</ul>
+					<hr class="d2l-minibar-menu-separator"></li>
+				<li>
+					<ul style="list-style:none;margin:10px;padding:0;">
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="https://brightspace.tudublin.ie/d2l/le/userprogress/6730/88420/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0">Progress</a>
+							</span></li>
+					</ul>
+					<hr class="d2l-minibar-menu-separator"></li>
+				<li>
+					<span style="white-space:nowrap;"><a class="d2l-link d2l_1_10_587" href="javascript:void(0);" onclick="D2L.O(&quot;__g1&quot;,3)();return false;">Log Out</a>
+					</span></li>
+			</ul>
+		</div>
+		</d2l-dropdown-content></d2l-dropdown></div><div class="d2l-navigation-s-admin-menu"><div class="d2l-navigation-s-admin-menu-spacer"></div><d2l-dropdown no-auto-open=""><d2l-navigation-button-notification-icon class="d2l-dropdown-opener" icon="tier3:gear" text="Admin Tools" data-prl="/d2l/lp/admintools/88420/dropdownpartial" data-prid="d2l_1_11_518" type="button" aria-haspopup="true" aria-expanded="false"></d2l-navigation-button-notification-icon><d2l-dropdown-content min-width="200" max-width="960" no-padding="" vertical-offset="0" d2l-dropdown-content="" dir="ltr" style="--d2l-dropdown-verticaloffset:0px;"><div id="d2l_1_11_518" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+		</div>
+		</d2l-dropdown-content></d2l-dropdown></div></div></d2l-navigation-main-header><d2l-navigation-main-footer class="d2l-branding-navigation-background-color"><div slot="main"><div class="d2l-navigation-s-main-wrapper" role="list"><div class="d2l-navigation-s-item" role="listitem"><a href="https://brightspace.tudublin.ie/d2l/lp/ouHome/defaultHome.d2l" class="d2l-navigation-s-link">My Home</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Progress</span><d2l-icon icon="d2l-tier1:chevron-down" dir="ltr"></d2l-icon></span></button><d2l-dropdown-menu render-content="render-content" d2l-dropdown-content="" no-auto-focus="" no-padding="" dir="ltr"><d2l-menu role="menu" active=""><d2l-menu-item-link href="/d2l/le/userprogress/6730/88420/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0" class="d2l-navigation-s-menu-item-root" text="Class Progress" aria-label="Class Progress" role="menuitem" tabindex="0" first=""></d2l-menu-item-link><d2l-menu-item-link href="/d2l/awards/88420/" class="d2l-navigation-s-menu-item-root" text="Awards" aria-label="Awards" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-dropdown-menu></d2l-dropdown></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="https://brightspace.tudublin.ie/d2l/le/content/88420/Home" class="d2l-navigation-s-link">Content</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Assessment</span><d2l-icon icon="d2l-tier1:chevron-down" dir="ltr"></d2l-icon></span></button><d2l-dropdown-menu render-content="render-content" d2l-dropdown-content="" no-auto-focus="" no-padding="" dir="ltr"><d2l-menu role="menu" active=""><d2l-menu-item-link href="/d2l/lms/grades/index.d2l?ou=88420" class="d2l-navigation-s-menu-item-root" text="Grades" aria-label="Grades" role="menuitem" tabindex="0" first=""></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/dropbox/dropbox.d2l?ou=88420" class="d2l-navigation-s-menu-item-root" text="Assignments" aria-label="Assignments" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/quizzing/quizzing.d2l?ou=88420" class="d2l-navigation-s-menu-item-root" text="Quizzes" aria-label="Quizzes" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/ext/rp/88420/lti/framedlaunch/031175ef-3786-4f9e-8342-fb9645721c51" class="d2l-navigation-s-menu-item-root" text="Video Assignments" aria-label="Video Assignments" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/ext/rp/88420/lti/framedlaunch/f2f8af8b-dceb-4ced-9854-de45fb43798b" class="d2l-navigation-s-menu-item-root" text="Plagiarism Checker" aria-label="Plagiarism Checker" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/survey/surveys.d2l?ou=88420" class="d2l-navigation-s-menu-item-root" text="Surveys" aria-label="Surveys" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-dropdown-menu></d2l-dropdown></div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Module Tools</span><d2l-icon icon="d2l-tier1:chevron-down" dir="ltr"></d2l-icon></span></button><d2l-dropdown-menu render-content="render-content" d2l-dropdown-content="" no-auto-focus="" no-padding="" dir="ltr"><d2l-menu role="menu" active=""><d2l-menu-item-link href="/d2l/lms/news/main.d2l?ou=88420" class="d2l-navigation-s-menu-item-root" text="Announcements" aria-label="Announcements" role="menuitem" tabindex="0" first=""></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/group/group_list.d2l?ou=88420" class="d2l-navigation-s-menu-item-root" text="Groups" aria-label="Groups" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/le/88420/discussions/List" class="d2l-navigation-s-menu-item-root" text="Discussions" aria-label="Discussions" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/ext/rp/88420/lti/framedlaunch/a44d697c-b552-4a8c-b5e7-12fe6b8d704a" class="d2l-navigation-s-menu-item-root" text="Virtual Classroom" aria-label="Virtual Classroom" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/checklist/checklists.d2l?ou=88420" class="d2l-navigation-s-menu-item-root" text="Checklist" aria-label="Checklist" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-dropdown-menu></d2l-dropdown></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="https://brightspace.tudublin.ie/d2l/le/userprogress/6730/88420/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0" class="d2l-navigation-s-link">Class Progress</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="http://www.dit.ie/library/" data-popup-menubar="1" data-popup-toolbar="1" rel="noopener" class="d2l-navigation-s-link d2l-navigation-s-link-popup">Library</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Help</span><d2l-icon icon="d2l-tier1:chevron-down" dir="ltr"></d2l-icon></span></button><d2l-dropdown-menu render-content="render-content" d2l-dropdown-content="" no-auto-focus="" no-padding="" dir="ltr"><d2l-menu role="menu" active=""><d2l-menu-item href="https://documentation.brightspace.com/EN/learners/learners.htm" data-popup-menubar="1" data-popup-toolbar="1" rel="noopener" class="d2l-navigation-s-menu-item-root d2l-navigation-s-link-popup" text="Brightspace Help for Students" aria-label="Brightspace Help for Students" role="menuitem" tabindex="0" first=""></d2l-menu-item><d2l-menu-item href="https://community.brightspace.com/" data-popup-menubar="1" data-popup-toolbar="1" rel="noopener" class="d2l-navigation-s-menu-item-root d2l-navigation-s-link-popup" text="Brightspace Community" aria-label="Brightspace Community" role="menuitem" tabindex="-1"></d2l-menu-item><d2l-menu-item-link href="/d2l/systemCheck" class="d2l-navigation-s-menu-item-root" text="System Check" aria-label="System Check" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-dropdown-menu></d2l-dropdown></div>
+		<div class="d2l-navigation-s-item d2l-navigation-s-more" role="listitem" data-hidden="1"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener" aria-haspopup="true" aria-expanded="false"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">More</span><d2l-icon icon="d2l-tier1:chevron-down" dir="ltr"></d2l-icon></span></button><d2l-dropdown-menu render-content="render-content" d2l-dropdown-content="" no-auto-focus="" no-padding="" dir="ltr"><d2l-menu role="menu" active=""><d2l-menu-item-link href="/d2l/lp/ouHome/defaultHome.d2l" class="d2l-navigation-s-menu-item-root d2l-hidden" text="My Home" aria-label="My Home" role="menuitem" tabindex="0" first=""></d2l-menu-item-link><d2l-menu-item class="d2l-navigation-s-menu-item-root d2l-hidden" text="Progress" aria-label="Progress" role="menuitem" tabindex="-1" aria-haspopup="true"><d2l-menu role="menu" label="Progress" aria-label="Progress" child-view=""><d2l-menu-item-link href="/d2l/le/userprogress/6730/88420/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0" text="Class Progress" aria-label="Class Progress" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/awards/88420/" text="Awards" aria-label="Awards" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-menu-item><d2l-menu-item-link href="/d2l/le/content/88420/Home" class="d2l-navigation-s-menu-item-root d2l-hidden" text="Content" aria-label="Content" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item class="d2l-navigation-s-menu-item-root d2l-hidden" text="Assessment" aria-label="Assessment" role="menuitem" tabindex="-1" aria-haspopup="true"><d2l-menu role="menu" label="Assessment" aria-label="Assessment" child-view=""><d2l-menu-item-link href="/d2l/lms/grades/index.d2l?ou=88420" text="Grades" aria-label="Grades" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/dropbox/dropbox.d2l?ou=88420" text="Assignments" aria-label="Assignments" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/quizzing/quizzing.d2l?ou=88420" text="Quizzes" aria-label="Quizzes" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/ext/rp/88420/lti/framedlaunch/031175ef-3786-4f9e-8342-fb9645721c51" text="Video Assignments" aria-label="Video Assignments" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/ext/rp/88420/lti/framedlaunch/f2f8af8b-dceb-4ced-9854-de45fb43798b" text="Plagiarism Checker" aria-label="Plagiarism Checker" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/survey/surveys.d2l?ou=88420" text="Surveys" aria-label="Surveys" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-menu-item><d2l-menu-item class="d2l-navigation-s-menu-item-root d2l-hidden" text="Module Tools" aria-label="Module Tools" role="menuitem" tabindex="-1" aria-haspopup="true"><d2l-menu role="menu" label="Module Tools" aria-label="Module Tools" child-view=""><d2l-menu-item-link href="/d2l/lms/news/main.d2l?ou=88420" text="Announcements" aria-label="Announcements" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/group/group_list.d2l?ou=88420" text="Groups" aria-label="Groups" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/le/88420/discussions/List" text="Discussions" aria-label="Discussions" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/ext/rp/88420/lti/framedlaunch/a44d697c-b552-4a8c-b5e7-12fe6b8d704a" text="Virtual Classroom" aria-label="Virtual Classroom" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/checklist/checklists.d2l?ou=88420" text="Checklist" aria-label="Checklist" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-menu-item><d2l-menu-item-link href="/d2l/le/userprogress/6730/88420/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0" class="d2l-navigation-s-menu-item-root d2l-hidden" text="Class Progress" aria-label="Class Progress" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item href="http://www.dit.ie/library/" data-popup-menubar="1" data-popup-toolbar="1" rel="noopener" class="d2l-navigation-s-menu-item-root d2l-navigation-s-link-popup d2l-hidden" text="Library" aria-label="Library" role="menuitem" tabindex="-1"></d2l-menu-item><d2l-menu-item class="d2l-navigation-s-menu-item-root d2l-hidden" text="Help" aria-label="Help" role="menuitem" tabindex="-1" aria-haspopup="true" last=""><d2l-menu role="menu" label="Help" aria-label="Help" child-view=""><d2l-menu-item href="https://documentation.brightspace.com/EN/learners/learners.htm" data-popup-menubar="1" data-popup-toolbar="1" rel="noopener" class="d2l-navigation-s-link-popup" text="Brightspace Help for Students" aria-label="Brightspace Help for Students" role="menuitem" tabindex="-1"></d2l-menu-item><d2l-menu-item href="https://community.brightspace.com/" data-popup-menubar="1" data-popup-toolbar="1" rel="noopener" class="d2l-navigation-s-link-popup" text="Brightspace Community" aria-label="Brightspace Community" role="menuitem" tabindex="-1"></d2l-menu-item><d2l-menu-item-link href="/d2l/systemCheck" text="System Check" aria-label="System Check" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-menu-item></d2l-menu></d2l-dropdown-menu></d2l-dropdown></div>
+		</div></div></d2l-navigation-main-footer><div class="d2l-navigation-s-mobile-menu" data-state="closed" data-cprl="/d2l/lp/courseSelector/88420/InitPartial"><div class="d2l-navigation-s-mobile-menu-mask"><div class="d2l-navigation-s-mobile-menu-focus-trap-start d2l-offscreen" tabindex="0">Menu Start</div><p class="d2l-navigation-s-mobile-menu-first d2l-offscreen" tabindex="-1">Menu Start</p><div class="d2l-navigation-s-mobile-menu-mask-close"><button class="d2l-navigation-s-button"><d2l-icon icon="tier1:close-large-thick" dir="ltr"></d2l-icon><span class="d2l-navigation-s-button-text">close</span></button></div></div><div class="d2l-navigation-s-mobile-menu-content"><d2l-navigation-band></d2l-navigation-band><div class="d2l-navigation-s-mobile-menu-header"><div class="d2l-navigation-s-mobile-menu-branded-header"><div class="d2l-navigation-s-header-logo-area d2l-navigation-s-header-no-home-icon"><d2l-navigation-separator class="d2l-navigation-s-logo-divider"></d2l-navigation-separator><div class="d2l-navigation-s-logo"><d2l-navigation-link-image src="/d2l/lp/navbars/6606/theme/viewimage/21692/view?v=20.20.1.19936-31" text="My Home" href="/d2l/lp/ouHome/defaultHome.d2l" slim=""></d2l-navigation-link-image></div><d2l-navigation-separator class="d2l-navigation-s-title-divider"></d2l-navigation-separator><div class="d2l-navigation-s-title-container"><a class="d2l-navigation-s-link" href="https://brightspace.tudublin.ie/d2l/home/88420" title="Visualising Data CMPU4091: 2019-20">Visualising Data CMPU4091: 2019-20</a></div></div><div class="d2l-navigation-s-gutter"></div><div class="d2l-navigation-s-mobile-menu-course-selector"><d2l-navigation-button-notification-icon icon="tier3:classes" text="Select a module..." type="button"></d2l-navigation-button-notification-icon></div></div><div class="d2l-navigation-s-mobile-menu-header-course-menu"><button class="d2l-navigation-s-button"><d2l-icon icon="tier1:chevron-left" dir="ltr"></d2l-icon><span class="d2l-navigation-s-button-text">Visualising Data CMPU4091: 2019-20</span></button><div class="d2l-navigation-s-title-container"><span class="d2l-navigation-s-title">Visualising Data CMPU4091: 2019-20</span></div></div></div><div class="d2l-navigation-s-title-container d2l-navigation-s-mobile-menu-title-bp d2l-branding-navigation-background-color"><a class="d2l-navigation-s-link" href="https://brightspace.tudublin.ie/d2l/home/88420" title="Visualising Data CMPU4091: 2019-20">Visualising Data CMPU4091: 2019-20</a></div><div class="d2l-navigation-s-mobile-menu-course-menu"></div><div class="d2l-navigation-s-mobile-menu-nav"><d2l-menu label="menu" role="menu" aria-label="menu" active=""><d2l-menu-item-link href="/d2l/lp/ouHome/defaultHome.d2l" text="My Home" aria-label="My Home" role="menuitem" tabindex="0" first=""></d2l-menu-item-link><d2l-menu-item text="Progress" aria-label="Progress" role="menuitem" tabindex="-1" aria-haspopup="true"><d2l-menu role="menu" label="Progress" aria-label="Progress" child-view=""><d2l-menu-item-link href="/d2l/le/userprogress/6730/88420/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0" text="Class Progress" aria-label="Class Progress" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/awards/88420/" text="Awards" aria-label="Awards" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-menu-item><d2l-menu-item-link href="/d2l/le/content/88420/Home" text="Content" aria-label="Content" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item text="Assessment" aria-label="Assessment" role="menuitem" tabindex="-1" aria-haspopup="true"><d2l-menu role="menu" label="Assessment" aria-label="Assessment" child-view=""><d2l-menu-item-link href="/d2l/lms/grades/index.d2l?ou=88420" text="Grades" aria-label="Grades" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/dropbox/dropbox.d2l?ou=88420" text="Assignments" aria-label="Assignments" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/quizzing/quizzing.d2l?ou=88420" text="Quizzes" aria-label="Quizzes" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/ext/rp/88420/lti/framedlaunch/031175ef-3786-4f9e-8342-fb9645721c51" text="Video Assignments" aria-label="Video Assignments" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/ext/rp/88420/lti/framedlaunch/f2f8af8b-dceb-4ced-9854-de45fb43798b" text="Plagiarism Checker" aria-label="Plagiarism Checker" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/survey/surveys.d2l?ou=88420" text="Surveys" aria-label="Surveys" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-menu-item><d2l-menu-item text="Module Tools" aria-label="Module Tools" role="menuitem" tabindex="-1" aria-haspopup="true"><d2l-menu role="menu" label="Module Tools" aria-label="Module Tools" child-view=""><d2l-menu-item-link href="/d2l/lms/news/main.d2l?ou=88420" text="Announcements" aria-label="Announcements" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/group/group_list.d2l?ou=88420" text="Groups" aria-label="Groups" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/le/88420/discussions/List" text="Discussions" aria-label="Discussions" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/ext/rp/88420/lti/framedlaunch/a44d697c-b552-4a8c-b5e7-12fe6b8d704a" text="Virtual Classroom" aria-label="Virtual Classroom" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item-link href="/d2l/lms/checklist/checklists.d2l?ou=88420" text="Checklist" aria-label="Checklist" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-menu-item><d2l-menu-item-link href="/d2l/le/userprogress/6730/88420/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0" text="Class Progress" aria-label="Class Progress" role="menuitem" tabindex="-1"></d2l-menu-item-link><d2l-menu-item href="http://www.dit.ie/library/" data-popup-menubar="1" data-popup-toolbar="1" rel="noopener" class="d2l-navigation-s-link-popup" text="Library" aria-label="Library" role="menuitem" tabindex="-1"></d2l-menu-item><d2l-menu-item text="Help" aria-label="Help" role="menuitem" tabindex="-1" aria-haspopup="true"><d2l-menu role="menu" label="Help" aria-label="Help" child-view=""><d2l-menu-item href="https://documentation.brightspace.com/EN/learners/learners.htm" data-popup-menubar="1" data-popup-toolbar="1" rel="noopener" class="d2l-navigation-s-link-popup" text="Brightspace Help for Students" aria-label="Brightspace Help for Students" role="menuitem" tabindex="-1"></d2l-menu-item><d2l-menu-item href="https://community.brightspace.com/" data-popup-menubar="1" data-popup-toolbar="1" rel="noopener" class="d2l-navigation-s-link-popup" text="Brightspace Community" aria-label="Brightspace Community" role="menuitem" tabindex="-1"></d2l-menu-item><d2l-menu-item-link href="/d2l/systemCheck" text="System Check" aria-label="System Check" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-menu-item><d2l-menu-item-separator role="separator"></d2l-menu-item-separator><d2l-menu-item text="Admin Tools" role="menuitem" tabindex="-1" aria-haspopup="true" last=""><d2l-menu role="menu" label="Admin Tools" aria-label="Admin Tools" child-view=""><d2l-menu-item text="Organisation Related" aria-label="Organisation Related" role="menuitem" tabindex="-1" aria-haspopup="true" last=""><d2l-menu role="menu" label="Organisation Related" aria-label="Organisation Related" child-view=""><d2l-menu-item-link href="/d2l/wcs/mp/captions/list" text="Video Note Captions" aria-label="Video Note Captions" role="menuitem" tabindex="-1" last=""></d2l-menu-item-link></d2l-menu></d2l-menu-item></d2l-menu></d2l-menu-item></d2l-menu></div></div><div class="d2l-navigation-s-mobile-menu-focus-trap-end d2l-offscreen" tabindex="0">Menu End</div></div></d2l-navigation></nav></header><span class="d2l-skipnav-target"></span><div class="d2l-page-message-container"><div class="d2l-page-message d2l-hidden d2l_1_12_232" id="d2l_sessionExpiryWarning"><div style="display:none;" id="d2l_sessionExpiryAlert" role="alert"><div class="d2l-container-icon d2l_1_13_317 d2l_1_14_924">
+			<div class="d2l-container-icon-inner d2l_1_15_358 d2l_1_16_492 d2l_1_17_769 d2l_1_18_250">
+				<h2 class="d2l-heading vui-heading-2">Are You Still There?</h2>
+				<div class="d2l-textblock">Your session expires after 60 minutes of inactivity, which protects your information in case you've left your device without logging out.<br>
+<br>
+<strong>Hit a key or click anywhere to stay logged in.</strong></div>
+			</div>
+		</div>
+		</div><div style="display:none;" id="d2l_sessionExpiryCheck" role="alert"><div class="d2l-container-icon d2l_1_13_317 d2l_1_14_924">
+			<div class="d2l-container-icon-inner d2l_1_19_64 d2l_1_16_492 d2l_1_17_769 d2l_1_18_250">
+				<div class="d2l_1_20_739">
+					<h2 class="d2l-heading vui-heading-2 d2l-heading-none">Oh, There You Are!</h2>
+				</div>
+			</div>
+		</div>
+		</div></div>
+		</div>
+		<div class="d2l-page-bg">
+			<div>
+			</div>
+		</div>
+		<div class="d2l-page-main d2l-min-width d2l-max-width" role="main">
+			<div class="d2l-page-collapsepane-container" style="min-height: 561px; top: 424px;"><div class="d2l-page-collapsepane-shadow" title="Expand side panel"><div></div></div><div class="d2l-page-collapsepane" data-openfirst="D2L.O(&quot;__g1&quot;,4)();"><span tabindex="-1" class="d2l-offscreen"></span><div class="d2l-page-collapsepane-handle"><h2 class="d2l-heading vui-offscreen">Side Panel</h2>
+			<a class="d2l-page-collapsepane-handle-link" tabindex="0" title="Expand side panel" role="button"><span class="d2l-page-collapsepane-handle-expand d2l-offscreen">Expand side panel</span><span class="d2l-page-collapsepane-handle-collapse d2l-offscreen">Collapse side panel</span></a></div><div class="d2l-page-collapsepane-content"><div class="d2l-page-collapsepane-content-inner d2l-scrollbar" style="max-height: 381px;"><div class="d2l-page-collapsepane-content-padding"><div id="ContentNavigator" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+				<div class="d2l-loading"><d2l-loading-spinner size="120" style="--d2l-loading-spinner-size:120px;"></d2l-loading-spinner><div class="d2l-textblock d2l-offscreen">Loading...</div>
+				</div>
+			</div>
+			</div></div></div><div class="d2l-page-collapsepane-end"></div><span tabindex="-1" class="d2l-offscreen"></span></div></div><div class="d2l-page-main-padding">
+				<div class="d2l-page-header d2l-header-responsive-collapse-layout">
+					<div class="d2l-box-layout d2l_1_22_554">
+						<div class="d2l-box d2l-box-v d2l-header-top d2l_1_23_299">
+							<div class="d2l-box-layout d2l_1_22_554">
+								<div class="d2l-box d2l-box-h d2l_1_24_640 d2l_1_23_299">
+									<nav aria-labelledby="d2l_1_25_69">
+										<h2 class="d2l-heading vui-offscreen" id="d2l_1_25_69">Breadcrumb:</h2>
+										<ol class="vui-breadcrumbs d2l_1_26_768 d2l_1_27_692" aria-labelledby="d2l_1_25_69">
+											<li><a class="d2l-link" href="javascript:void(0);" onclick="D2L.O(&quot;__g1&quot;,5)();return false;">Table of Contents</a>
+											</li><li><a class="d2l-link" href="https://brightspace.tudublin.ie/d2l/le/content/88420/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-591545">Learning resources</a>
+											</li><li><a class="d2l-link" href="https://brightspace.tudublin.ie/d2l/le/content/88420/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-591567">Tableau</a>
+											</li><li class="d2l-page-breadcrumb-title"><span class="d2l-breadcrumb-text">The Ultimate Cheat Sheet on Tableau Charts</span></li></ol>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="d2l-box d2l-box-v d2l-header-bottom-box-responsive d2l_1_23_299">
+							<div class="d2l-box-layout d2l_1_22_554">
+								<div class="d2l-box d2l-box-h d2l_1_24_640 d2l_1_23_299">
+									<div class="d2l-page-title-c"><div class="d2l-box-layout d2l_1_28_686">
+										<div class="d2l-box d2l-box-h d2l_1_24_640 d2l_1_23_299">
+											<h1 class="d2l-page-title d2l-heading vui-heading-1 bsi-set-solid">The Ultimate Cheat Sheet on Tableau Charts</h1>
+											<div id="d2l_1_29_996" class="d2l-floating-container d2l-hidden vui-dropdown-menu">
+												<template id="d2l_pageTitleActions" class="d2l-contextmenu-template" data-floatingcontainerid="d2l_1_29_996" data-dropdowncontentid="d2l_1_30_53"></template>
+											</div><d2l-dropdown no-auto-open="" id="d2l_1_0_467" class="d2l-contextmenu-ph d2l-contextmenu-ph-dropdown" data-contextmenuid="d2l_pageTitleActions" data-placeholderkey="d2l_1_33_42" data-openerid="d2l_1_34_466"><d2l-button-icon text="Actions for &#39;The Ultimate Cheat Sheet on Tableau Charts&#39;" icon="d2l-tier1:chevron-down" id="d2l_1_34_466" class="d2l-dropdown-opener" dir="ltr" type="button" aria-haspopup="true" aria-expanded="false"></d2l-button-icon></d2l-dropdown>
+										<div class="d2l-clear"></div>
+									</div>
+								</div>
+								</div></div>
+							<div class="d2l-box d2l-box-h d2l_1_23_299">
+								<div class="d2l-page-header-side">
+									<div class="d2l_1_35_869 d2l-inline">
+										<span id="d2l_1_36_852" data-active-id="d2l_1_37_705" data-inactive-id="d2l_1_38_954"><d2l-button-icon icon="tier1:bookmark-hollow" class="" id="d2l_1_37_705" onclick="D2L.O(&quot;__g1&quot;,6)();" text="Add Bookmark" dir="ltr" type="button"></d2l-button-icon>
+										<d2l-button-icon icon="tier1:bookmark-filled" class="d2l-hidden" id="d2l_1_38_954" onclick="D2L.O(&quot;__g1&quot;,7)();" text="Remove Bookmark" dir="ltr" type="button"></d2l-button-icon>
+										</span></div>
+									<d2l-button-icon icon="tier1:fullscreen" class="" onclick="D2L.O(&quot;__g1&quot;,8)();" text="View content in new window" dir="ltr" type="button"></d2l-button-icon>
+									<div class="d2l_1_39_909 d2l-inline">
+										<div class="d2l-iterator">
+											<a class="d2l-iterator-button d2l-iterator-button-prev d2l-iterator-button-notext" role="button" href="https://brightspace.tudublin.ie/d2l/le/content/88420/navigateContent/161/Previous?pId=591567" onclick="D2L.O(&quot;__g1&quot;,9)();" title="Previous "><d2l-icon icon="d2l-tier1:chevron-left" dir="ltr"></d2l-icon><span class="d2l-offscreen">Previous </span>&nbsp;</a><a class="d2l-iterator-button d2l-iterator-button-next d2l-iterator-button-notext" role="button" href="https://brightspace.tudublin.ie/d2l/le/content/88420/navigateContent/161/Next?pId=591567" onclick="D2L.O(&quot;__g1&quot;,10)();" title="Next"><span class="d2l-offscreen">Next</span>&nbsp;<d2l-icon icon="d2l-tier1:chevron-right" dir="ltr"></d2l-icon></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d2l-messagearea d2l_1_40_246" id="d2l_messagearea" role="alert" tabindex="0"></div><div id="ContentView" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+				<div class="d2l-iframe-loading-container d2l_1_24_640 d2l_1_42_648" style="display: none;">
+				</div>
+				<iframe class="d2l-iframe d2l-iframe-fit-user-content d2l_1_24_640 d2l_1_42_648" id="d2l_1_41_496" name="d2l_1_41_496" src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/the-ultimate-cheat-sheet-on-tableau-charts-642bca94dde5.html" title="The Ultimate Cheat Sheet on Tableau Charts" frameborder="0" scrolling="auto" allowfullscreen="" allow="microphone *; camera *" onload="this.m_loaded=true;" data-default-height="580"></iframe>
+			</div>
+			<div class="d2l_1_43_831">
+				<div class="d2l_1_44_570">
+					<button type="button" class="d2l-button" id="d2l_1_2_80"><span class="d2l-icon-custom d2l_1_45_937"></span>Reflect in ePortfolio</button></div>
+				<div class="d2l_1_46_453">
+					<div class="d2l_1_39_909 d2l-inline">
+						<div class="d2l-iterator">
+							<a class="d2l-iterator-button d2l-iterator-button-prev d2l-iterator-button-notext" role="button" href="https://brightspace.tudublin.ie/d2l/le/content/88420/navigateContent/161/Previous?pId=591567" onclick="D2L.O(&quot;__g1&quot;,9)();" title="Previous "><d2l-icon icon="d2l-tier1:chevron-left" dir="ltr"></d2l-icon><span class="d2l-offscreen">Previous </span>&nbsp;</a><a class="d2l-iterator-button d2l-iterator-button-next d2l-iterator-button-notext" role="button" href="https://brightspace.tudublin.ie/d2l/le/content/88420/navigateContent/161/Next?pId=591567" onclick="D2L.O(&quot;__g1&quot;,10)();" title="Next"><span class="d2l-offscreen">Next</span>&nbsp;<d2l-icon icon="d2l-tier1:chevron-right" dir="ltr"></d2l-icon></a></div>
+					</div>
+				</div>
+				<div class="d2l-clear"></div>
+			</div>
+			<div class="d2l_1_47_396">
+				<div id="AdditionalInfoPlaceholder" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+					<ul class="vui-tabmenu" role="tablist" id="d2l_1_48_463">
+						<li class="vui-tabmenu-item vui-tabmenu-item-select" role="presentation" style="width: 100%;">
+							<a id="d2l_1_49_844" href="javascript:void(0);" role="tab" aria-selected="true" tabindex="0" data-tabmenu-onclick="D2L.O(&quot;__g1&quot;,12)();">
+								Activity Details<span class="vui-tabmenu-item-blue">
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="d2l_1_50_749 d2l_1_51_37">
+					<div id="ActivityDetailsTabId">
+						<div class="d2l-box-layout d2l_1_22_554">
+							<div class="d2l-box d2l-box-h d2l_1_24_640 d2l_1_23_299">
+								<div class="d2l_1_52_365">
+									<div class=" d2l-inline">
+										<div id="d2l_1_3_368" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+											<form data-method="post" data-scope="" class="d2l-form d2l-form-primary" id="CompletionTaskForm" onsubmit="return false;">
+												<div class=" d2l-inline">
+													<div class="d2l-container-icon d2l_1_13_317 d2l_1_53_990 d2l_1_13_317 d2l_1_54_736 d2l_1_55_500">
+														<div class="d2l-textblock vui-emphasis">Task: View this topic</div>
+													</div>
+												</div>
+												<div class=" d2l-inline">
+												</div>
+											<input type="text" class="d2l-hidden" aria-label="ignore"></form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" d2l-hidden" id="ResultsDetailsTabId">
+						<div id="ResultDetails" class="d2l-placeholder d2l-placeholder-inner d2l-placeholder-live" aria-live="assertive">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="StatusPlaceholder" class="d2l-placeholder d2l-placeholder-live" aria-live="assertive">
+				<div class="d2l-textblock d2l-textblock-secondary vui-emphasis"></div>
+			</div>
+		</div>
+	</div>
+<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/jquery.min.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/jquery-ui.min.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/bsi.min.js.download"></script>
+		<script>
+		//<![CDATA[
+			window.__ttiOnload = function() {ttiPolyfill.getFirstConsistentlyInteractive().then(function(tti) {if (tti) {document.dispatchEvent(new CustomEvent('d2l-performance-measure', {bubbles: true,detail: { name: 'd2l.page.tti', value: {name: 'd2l.page.tti', entryType: 'tti-polyfill', duration: tti, startTime: 0} }}));}});};
+		//]]>
+		</script>
+		<script async="async" onload="window.__ttiOnload()" src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/tti-polyfill-global.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/D2L.LP.Web.Desktop.default.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/D2L.LE.Content.ContentViewer.default.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/D2L.LE.Content.Web.Desktop.default.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/D2L.LE.ToolIntegration.Content.default.js.download"></script>
+		<script>
+		//<![CDATA[
+			window['adrum-app-key'] = 'AD-AAB-AAM-GGF';window['adrum-ext-url'] = 'https://s.brightspace.com/lib/adrum-ext/4.2.10-0/adrum-ext.js';window['adrum-xd-url'] = '';window['adrum-start-time'] = Date.now();
+			function addD2LDataToAdrum() {if( typeof ADRUM.command === 'function' ) {ADRUM.command('addUserData','isDaylightEnabled','True');ADRUM.command('addUserData','productVersion','20.20.1.19936');}}
+		//]]>
+		</script>
+		<script async="async" onload="addD2LDataToAdrum()" src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/adrum.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/tock.min.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/ifvisible.min.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/d2l-nav-host-base.js.download"></script>
+		<script src="./The Ultimate Cheat Sheet on Tableau Charts - Visualising Data CMPU4091_ 2019-20_files/d2l-nav-docked-host.js.download"></script>
+		<script>
+		//<![CDATA[
+			D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
+D2L.O("__g1",13)();
+D2L.O("__g1",14)();
+D2L.O("__g1",15)();
+D2L.O("__g1",16)();
+D2L.O("__g1",17)();
+D2L.O("__g1",18)();
+D2L.O("__g1",19)();
+D2L.O("__g1",20)();
+D2L.O("__g1",21)();
+} );
+
+			D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
+D2L.O("__g1",22)();
+D2L.O("__g1",23)();
+D2L.O("__g1",24)();
+} );
+
+			D2L.OR={
+"d2l_1_7_237":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_8_227":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_9_978":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.UXP.Profile.6730\"]}",
+"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.LP.Notification.Settings.88420\"]}",
+"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.UXP.Preferences.88420\"]}",
+"3":"{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.Logout\",\"P\":[\"\/d2l\/logout\"]}",
+"4":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"ContentNavigator\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"ContentNavigator\"},\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/88420\/viewobject\/591806\/PartialNavigator?mId=591567\"},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false}],\"D\":true},0,false,null],\"D\":true}",
+"5":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/88420\/Home?itemIdentifier=TOC\"}]}]}",
+"6":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Toggle.ToggleFunction\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_36_852\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Toggle.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_36_852\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/88420\/viewContent\/591806\/ToggleBookmark?bookmarkStatus=1\"}],\"D\":true}]}",
+"7":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Toggle.ToggleFunction\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_36_852\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Toggle.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_36_852\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/88420\/viewContent\/591806\/ToggleBookmark?bookmarkStatus=0\"}],\"D\":true}]}",
+"8":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"The Ultimate Cheat Sheet on Tableau Charts\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/88420\/fullscreen\/591806\/View\"},1280,800,false,false]}",
+"9":"{\"_type\":\"func\",\"N\":\"D2L.LE.Content.Desktop.Topic.OpenInNewWindow\",\"P\":[\"https:\/\/medium.com\/analytics-vidhya\/recreating-gapminder-in-tableau-a-humble-tribute-to-hans-rosling-53de74b18ec\"]}",
+"10":"{\"_type\":\"func\",\"N\":\"D2L.LE.Content.Desktop.Topic.OpenInNewWindow\",\"P\":[\"https:\/\/public.tableau.com\/en-us\/s\/download\"]}",
+"11":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_2_80\"},{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/ep\/contentReflection\/{orgUnitId}\/{action}\/{id}\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"previewReflection\",\"orgUnitId\":88420,\"id\":{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_2_80\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/ep\/contentReflection\/88420\/CreateReflectionDialog?tag2=CMPU409133694DT211C-1920&tag3=The+Ultimate+Cheat+Sheet+on+Tableau+Charts&tag1=Tableau\"}],\"D\":true}}]}],\"D\":true}",
+"12":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"ActivityDetailsTabId\"},true]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"EvaluationSummaryTabId\"},false]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"ResultsDetailsTabId\"},false]}]}",
+"13":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.FloatingContainer.Init\"}",
+"14":"{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.Init\",\"P\":[\"6730\",60,5,{\"_type\":\"id\",\"Value\":\"d2l_sessionExpiryWarning\"},\"d2l_sessionExpiryAlert\",\"d2l_sessionExpiryCheck\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/extend\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isLogout=0&isUsernamePasswordLogin=0\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isLogout=1&isUsernamePasswordLogin=0\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[null,{\"_type\":\"id\",\"Value\":\"d2l_1_56_129\"},\"Warning\",\"New User Session\",\"The current user session has changed, so the links and content on this page may not behave as expected.\",\"OK\",\"\",\"Close this Dialog\",\"d2l-dialog-inline-body-warning\",true,false,false],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Inline.Abort\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_56_129\"}]}]}",
+"15":"{\"_type\":\"func\",\"N\":\"D2LMathML.DesktopInit\",\"P\":[\"https:\/\/s.brightspace.com\/lib\/mathjax\/2.6.1\/MathJax.js?config=MML_HTMLorMML\",\"https:\/\/s.brightspace.com\/lib\/mathjax\/2.6.1\/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2cSafe\"]}",
+"16":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"eAVRyaxNbBZc5JFVSj4djexZmPV0U2JQ\",-260505717]}",
+"17":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120,\"alert_bucket_{0}\",\"ab_status_{0}\"]}",
+"18":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Common.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
+"19":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[0,{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[3],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)?))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"dd\/MM\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-gb\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2020,\"Month\":2,\"Day\":7,\"Hour\":12,\"Minute\":45,\"Second\":19}}]}",
+"20":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2fle%2fcontent%2f88420%2fviewContent%2f591806%2fView&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Common.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
+"21":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/88420\/help\"}]}",
+"22":"{\"_type\":\"func\",\"N\":\"D2L.LE.ViewContent.ContentViewer.OnLoad\",\"P\":[88420,591806,null,{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/88420\/viewContent\/591806\/3c90877e-64a6-4c59-b168-4db9791bbd0b\/TrackViewing\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/88420\/viewContent\/591806\/3c90877e-64a6-4c59-b168-4db9791bbd0b\/FinalizeView\"},0]}",
+"23":"{\"_type\":\"pipe\"}",
+"24":"{\"_type\":\"func\",\"N\":\"D2L.LE.ToolIntegration.Content.CompletionStatusChanged.Actions.RegisterHandler\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_3_368\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_3_368\"},\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/88420\/object\/591806\/UpdateCompletion\"},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false}],\"D\":true},0,false,null],\"D\":true}]}"}
+,
+"d2l_1_11_518":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"ContentNavigator":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_31_337":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_467\"},{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/ep\/contentReflection\/{orgUnitId}\/{action}\/{id}\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"previewReflection\",\"orgUnitId\":88420,\"id\":{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_467\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/ep\/contentReflection\/88420\/CreateReflectionDialog?tag2=CMPU409133694DT211C-1920&tag3=The+Ultimate+Cheat+Sheet+on+Tableau+Charts&tag1=Tableau\"}],\"D\":true}}]}],\"D\":true}"}
+,
+"d2l_1_32_574":{"0":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.Core.Metadata.Web.Navigation.GetViewEditMetadataReturnPointKey\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/88420\/viewContent\/591806\/View\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/metadata\/view.d2l?fp=mc&ou=88420&type=2&objectId=591806\"}]}]}"}
+,
+"d2l_1_29_996":{"onClose":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.ContextMenu.OnCloseHandler\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_pageTitleActions\"}]}"}
+,
+"ContentView":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"AdditionalInfoPlaceholder":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_3_368":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"ResultDetails":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"StatusPlaceholder":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+
+};
+
+		//]]>
+		</script>
+	
+</body></html>
