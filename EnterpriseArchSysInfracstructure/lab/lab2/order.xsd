@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name = "order">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name = "person" type = "xs:string"/>
+				<xs:attributeGroup  name = "shipto" >
+					<xs:element name = "name" type = "xs:string"/>
+					<xs:element name = "address" type = "xs:string"/>
+					<xs:element name = "city" type = "xs:string"/>
+					<xs:element name = "country" type = "xs:string"/>
+				</xs:attributeGroup>
+				<xs:attributeGroup  name = "item" >
+					<xs:element name = "name" type = "xs:string"/>
+					<xs:element name = "title" type = "xs:string"/>
+					<xs:element name = "id" type = "xs:positiveInteger"/>
+					<xs:element name = "note" type = "xs:string"/>
+					<xs:element name = "quantity" type = "xs:string"/>
+					<xs:element name = "price" type = "xs:float"/>
+				</xs:attributeGroup>
+			</xs:sequence>
+			<xs:attribute name = "orderid" type = "xs:string" use = "required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
