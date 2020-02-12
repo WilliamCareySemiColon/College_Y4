@@ -1,0 +1,32 @@
+<html>
+	<script type = "text/javascript">
+	//load the xml file
+	var doc = new ActiveXObject("Microsoft.XMLDOM");
+	doc.async = false;
+	doc.load("orders.xml");
+	
+	var error = doc.parseError;
+	if(error != "")
+	{
+		alert(error.reason);
+	}
+	
+	//write the html output
+	document.write("<b>XML Root Tag Name: " + 
+		doc.documentElement.tagName + 
+		"<br/><br/></b>");
+		
+	var rootChildren = doc.documentElement.childNodes;
+	var orderTotal = 0.00;
+	
+	//loop the elements
+	for(var i = 0; i < rootChildren.length; i++)
+	{
+		//place code here
+		document.write(rootChildren[i].tagName + ": "
+		+ rootChildren[i].firstChild.nodeValue
+		+ "<br/>");
+	}
+	
+	</script>
+</html>
