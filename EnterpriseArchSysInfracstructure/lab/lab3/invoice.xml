@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<invoice 	xmlns="http://www.tudublin.ie"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.tudublin.ie invoice.xsd">
+
+	<invoiceNumber>
+	</invoiceNumber>
+	<invoiceDate>
+	</invoiceDate>
+	<invoiceTotal>
+	</invoiceTotal>
+	<issuedBy>
+		<staffName>
+		</staffName>
+		<staffNumber>
+		</staffNumber>
+	</issuedBy>
+	<billTo>
+		<name>
+		</name>
+		<address>
+		</address>
+	</billTo>
+	<item>
+		<itemName>
+		</itemName>
+		<stockAmount>
+		</stockAmount>
+		<brand>
+		</brand>
+	</item>
+	<payement>
+		<ItemPrice>
+		</ItemPrice>
+		<PostPrice>
+		</PostPrice>
+		<bankNumber>
+		</bankNumber>
+	</payement>
+</invoice>
