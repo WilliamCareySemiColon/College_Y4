@@ -1,0 +1,10 @@
+Input Validation
+• Client-side validation is performed to enhance
+the user experience and save bandwidth
+– Provide immediate feedback
+– Save trips to the server
+• However, you must always perform server-
+side validation as well, for security reasons
+– JavaScript can be bypassed
+– Input sanitization
+• Avoid code injection, cross-site scripting

@@ -1,9 +1,0 @@
-1. create the login form
-– Don’t forget the HTML <input type = “password”>
-2. validate the fields on the client-side
-– JavaScript Validation API, Angular…
-– <input> required, lengths, type…
-3. send the form data to the server by POST
-– HTTPS will send the form data encrypted *
-– e.g. <form method="post" action="/login">
-Authentication - Client

@@ -1,17 +1,17 @@
 Artifical Intelligence
 70/30 split
 LAb = 15% each
-Lab test 1 - Week6
-Lab test 2 - Week11
+Lab test 1 - Week6 - 100% CA - 100% result - 30%
+Lab test 2 - Week11 - cancelled due to virus
 
 Visual Data
 50/50 split
-8 labs weekly from w1 @ 3% each
+8 labs weekly from w1 @ 3% each = 12.5% so far (One more lab to correct)
 Assignment : 26%
 
 Enterprise Arch
 60/40 spilt
-lab test 15% Week7 
+lab test 15% Week7 - result yet to be realised
 Written Assignment: 25%
 
 Enterprise App development

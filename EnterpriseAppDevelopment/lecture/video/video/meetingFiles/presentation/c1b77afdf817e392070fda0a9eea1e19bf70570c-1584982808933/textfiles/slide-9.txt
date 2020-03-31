@@ -1,0 +1,7 @@
+Regular Expressions:
+https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions
+Test Regular Expressions: https://regex101.com/
+Your user’s passwords should have minimum lengths and
+format requirements, which you can check with regular
+expressions.
+Regular Expressions

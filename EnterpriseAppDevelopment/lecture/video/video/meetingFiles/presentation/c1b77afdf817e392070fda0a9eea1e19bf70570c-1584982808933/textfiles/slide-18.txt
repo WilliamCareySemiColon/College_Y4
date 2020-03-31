@@ -1,0 +1,15 @@
+Cookies
+– Secure: If the cookie contains the word "Secure", the cookie
+may only be retrieved with a secure server (HTTPS).
+– HttpOnly: directs browsers not to expose cookies through
+channels other than HTTP (and HTTPS) requests, and thus not
+accessible via JavaScript (using document.cookie)
+– Name=Value: cookies have the form of key and value pairs.
+Values may not include semicolons, commas, or whitespace.
+• Browsers do not send the cookie attributes back to the server, just
+name and value.
+• The attributes are used by the browser to determine when to
+delete a cookie, accept or block a cookie, etc.
+• Beware of the EU Cookie Laws and GDPR!
+– Requires asking permission from users before planting cookies, and
+including details on their purpose.

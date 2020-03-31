@@ -1,0 +1,18 @@
+Password Hashes on Node.js
+• In the DB, keep the passwords hashed
+– bcrypt is the de facto way to hash passwords
+– store the result in a field with ~255 characters
+• https://www.npmjs.com/package/bcrypt
+bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash) {
+// Store hash in your password DB.
+});
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
+// hash is loaded from your DB.
+bcrypt.compare(myPlaintextPassword, hash, function(err, result) {
+if(result) {
+// Passwords match
+} else {
+// Passwords don't match
+}
+});

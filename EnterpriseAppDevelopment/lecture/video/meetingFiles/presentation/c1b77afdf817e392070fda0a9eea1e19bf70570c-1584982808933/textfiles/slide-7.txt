@@ -1,3 +1,0 @@
-Validation HTML Input Attributes
-pattern="[A-Za-z]{3}" // 3 letters
-A String pattern is like a regular expression, with "" instead of /^ $/
