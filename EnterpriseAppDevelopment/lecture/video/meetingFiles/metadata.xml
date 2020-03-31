@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<recording>
+  <id>2245dfb34e9bf002a50d1ea99fcee604745ebc2a-1584982775910</id>
+  <state>published</state>
+  <published>true</published>
+  <start_time>1584982775910</start_time>
+  <end_time>1584986009277</end_time>
+  <participants>35</participants>
+  <meeting id="2245dfb34e9bf002a50d1ea99fcee604745ebc2a-1584982775910" externalId="38385-1584982775" name="Lecture 8" breakout="false"/>
+  <meta>
+    <autostartrecording>true</autostartrecording>
+    <isBreakout>false</isBreakout>
+    <meetingName>Lecture 8</meetingName>
+    <breakoutsenabled>true</breakoutsenabled>
+    <hasearlyaccess>true</hasearlyaccess>
+    <meetingstarttime>1584982803</meetingstarttime>
+    <meetingId>38385-1584982775</meetingId>
+  </meta>
+  <playback>
+    <format>presentation</format>
+    <link>http://10.0.3.203/playback/presentation/2.0/playback.html?meetingId=2245dfb34e9bf002a50d1ea99fcee604745ebc2a-1584982775910</link>
+    <processing_time>932469</processing_time>
+    <duration>3165596</duration>
+    <extensions>
+      <preview>
+        <images>
+          <image width="176" height="136" alt="Tutorials/Tutoriales/Anleitungen/&#x202B;&#x62F;&#x631;&#x648;&#x633;&#x202C;/Tutoriais/ Tutoriels www.bongolearn.com/virtualclassroom">http://10.0.3.203/presentation/2245dfb34e9bf002a50d1ea99fcee604745ebc2a-1584982775910/presentation/d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1584982775936/thumbnails/thumb-1.png</image>
+          <image width="176" height="136" alt="">http://10.0.3.203/presentation/2245dfb34e9bf002a50d1ea99fcee604745ebc2a-1584982775910/presentation/d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1584982775936/thumbnails/thumb-2.png</image>
+          <image width="176" height="136" alt="">http://10.0.3.203/presentation/2245dfb34e9bf002a50d1ea99fcee604745ebc2a-1584982775910/presentation/d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1584982775936/thumbnails/thumb-3.png</image>
+        </images>
+      </preview>
+    </extensions>
+    <size>77890812</size>
+  </playback>
+  <raw_size>325420228</raw_size>
+</recording>

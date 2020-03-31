@@ -1,0 +1,17 @@
+• Sessions set a user-key/ID on the user's computer
+– Web storage: client-side sessions, to allow separate instances of the same
+web app to run in different windows without interfering with each other
+– Traditional cookies: communication with server
+• When you open a page, it scans the computer for a user-key.
+– If there is a match, it accesses that session
+– If not, it starts a new session
+• Session data is not saved in the cookie, just the session ID
+• Session data is stored server-side
+– You might recall $_SESSION from PHP:
+• $_SESSION["favanimal"] = "cat";
+– In Node/Express, you need to add an appropriate store to manage this data
+• The most popular is Redis
+– Officially, Redis is not supported on Windows, but you can still install it:
+https://redislabs.com/blog/redis-on-windows-8-1-and-previous-versions/
+https://www.redislabs.com/blog/redis-on-windows-10/
+Sessions

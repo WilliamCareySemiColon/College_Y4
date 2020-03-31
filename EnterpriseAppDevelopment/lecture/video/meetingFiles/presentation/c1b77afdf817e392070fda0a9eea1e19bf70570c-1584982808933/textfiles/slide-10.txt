@@ -1,0 +1,5 @@
+Validation CSS Pseudo Selectors
+selector:pseudo-class {
+property:value;
+}
+input:invalid Selects all <input> elements with an invalid value
