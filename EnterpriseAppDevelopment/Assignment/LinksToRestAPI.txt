@@ -4,3 +4,4 @@ https://rws-cards-api.herokuapp.com/api/v1/cards/search?name=THE%20MAGICIAN
 github link
 https://github.com/ekelen/tarot-api
 
+https://rapidapi.com/
