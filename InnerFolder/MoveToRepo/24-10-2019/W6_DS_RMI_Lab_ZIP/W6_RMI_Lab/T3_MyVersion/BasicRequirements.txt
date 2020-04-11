@@ -1,0 +1,46 @@
+A shared whiteboard is a distributed program that allows a group of users 
+to share a common view of a drawing surface containing graphical objects, each of which has been drawn by one of the users.  
+
+A server maintains the current state of a drawing by providing an operation for clients to inform it about 
+the latest shape the users have drawn and keeping a record of all the shapes drawn so far. 
+
+The server also provides operations for clients to add a shape, retrieve a shape and retrieve all the shapes. 
+
+The server has a version number (an integer) that it increments each time a new shape arrives and attaches it to the new shape. 
+
+The server provides operations allowing clients to retrieve its version number or the version number of a shape, 
+so that they may avoid fetching shapes they already have. 
+
+
+----------------------------------------------------------------------------------------------------------------------
+One server
+
+the server has operations to add objects, read object by id and read all items
+
+many people have access to the server, whom have a add, read singular by id and read all permissions
+
+there can be many objects, of which everytime a new one is added, there is a id attached to it
+
+objects are defined as 2d shapes
+
+-----------------------------------------------------------------------------------------------------------------
+Potential solution:
+
+	treat people as remote clients
+	Clients request the server to get access to the different shapes
+	shapes are remote objects, which are accessed by the server when requested 
+	
+	-----------------------------------------------------------------------------------------------------
+	Each shape have a collection of vertices
+	Using the vertices collection length, we can deterimine the actually shape if the user requests it
+	Some shapes have same amount of vertices, so an algorithm would need to calculate the weight of the 
+	lengths between the vertices
+	Use One class to define the shape while the other to actually retrieve the item.
+	
+	Define interfaces
+		how to add items, get the shape items by id and retreive all the items
+		To get the state of the object and the object itself
+		
+		Classes & Interface for the shape and shape-getter
+		Classes for the server and the client
+	

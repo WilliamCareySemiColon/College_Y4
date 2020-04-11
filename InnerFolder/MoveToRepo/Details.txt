@@ -1,0 +1,17 @@
+Mac Learning Bookslides Part b is covered is the fifth week
+
+Also, the lab I should be in the the 1st floor of kevin street
+
+Practise the formulas inside the machine learning before understanding how to implement them
+
+Entropy
+
+- Shannon Formula
+
+The ID3 Algorithm
+
+**Properly revise over BookSlides 4A
+
+4B Contains the details that goes over the continous feature
+
+Go over tutorials on youtube for the formula

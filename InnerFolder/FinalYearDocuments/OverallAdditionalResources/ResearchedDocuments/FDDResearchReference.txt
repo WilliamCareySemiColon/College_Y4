@@ -1,0 +1,17 @@
+pg 86 - 92
+
+https://core.ac.uk/download/pdf/11461066.pdf#page=86
+
+Accessed 18/10/2019
+
+Refining Feature Driven Development - A methodology for early aspects 
+
+Jianxiong Pang 
+Lynne Blair 
+
+Computing Department Lancaster University, 
+Bailrigg Lancaster, 
+LA1 4YR, U.K.  
+
+j.pang@lancaster.ac.uk 
+lb@comp.lancs.ac.uk 
