@@ -1,7 +1,12 @@
 Rest API Link (using example)
 https://rws-cards-api.herokuapp.com/api/v1/cards/search?name=THE%20MAGICIAN
 
-github link
+github link for the tarot api
 https://github.com/ekelen/tarot-api
 
 https://rapidapi.com/
+
+The file containing the numerlogy api
+https://rapidapi.com/vedicrishi/api/basic-horoscope-and-numerology?endpoint=54d5d8f3e4b0d8f7e1c73589
+
+maybe the api access link is different to the link above
