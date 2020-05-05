@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+<xs:element name="order_document">                       		<!-- Root element -->
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="person_responsible" type="xs:string"/>  <!-- Person -->
+
+      <!-- These are the various stakeholders involved -->
+      <xs:element name="parties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ship_to_party">                   <!-- Ship To -->
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="name" type="xs:string"/>  <!-- Name            -->
+                  <xs:element name="address_info">            <!-- Address Details -->
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="address_line" type="xs:string"/>
+                        <xs:element name="city" type="xs:string"/>
+                        <xs:element name="destination_country" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <!-- Order Items -->
+      <xs:element name="items">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="item" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+      		      <xs:element name="item-name" type="xs:string"/>
+                  <xs:element name="title" type="xs:string"/>
+                  <xs:element name="id" type="xs:string"/>
+                  <xs:element name="note" type="xs:string" minOccurs="0"/>
+                  <xs:element name="quantity" type="xs:positiveInteger"/>
+                  <xs:element name="price" type="xs:decimal"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType> 
+      </xs:element>
+
+        <!-- The total of the quantities for all items -->
+      <xs:element name="quantity_total">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+        <!-- The total value of the order (total price * quantity for all items) -->
+      <xs:element name="order_total">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+    </xs:sequence>
+  
+    <xs:attribute name="order_id_number" type="xs:string" use="required"/>
+  
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
