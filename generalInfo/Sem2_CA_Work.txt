@@ -21,9 +21,9 @@ Assignment : 26%
 Enterprise Arch
 60/40 spilt
 lab test 15% Week7 -  64% = 9.6%
-Written Assignment: 25%
+Written Assignment: 25% - 67% = 16.75
+Overall CA: 9.6 + 16.75% = 26.35
 
 Enterprise App development
 70/30 split
 Assignment 30%
-Have easter break to complete it
